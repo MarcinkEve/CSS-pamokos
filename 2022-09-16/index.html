@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>2022-09-16</title>
+  </head>
+  <body>
+    <h1>About</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      dolorum doloribus ullam odio quod molestias saepe, accusantium ut culpa,
+      sequi expedita ipsa nihil. <span>Consequatur voluptate</span> sit
+      provident architecto, tempore optio consequuntur officiis omnis vitae
+      ipsam porro quidem quas eos placeat. Quasi aliquam aliquid laudantium
+      maxime, esse nisi possimus quae perferendis
+      <span>nesciunt obcaecati suscipit</span> quaerat omnis, quibusdam aperiam
+      voluptas quidem totam nobis eum dicta. Ad odit eius natus? Totam tempora
+      pariatur dicta delectus quidem possimus accusamus nihil inventore
+      blanditiis asperiores obcaecati odit maiores harum, voluptatibus
+      architecto sequi incidunt quod, optio quae ut minima fugit! Ipsam
+      cupiditate provident
+      <span><em>consequatur, ipsum aperiam perspiciatis!</em></span>
+    </p>
+    <h2>Our Locations</h2>
+    <ul>
+      <li>
+        USA
+        <ul>
+          <li>
+            <a
+              href="https://en.wikipedia.org/wiki/New_York_City"
+              target="_blank"
+              >New York</a
+            >
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Columbus" target="_blank"
+              >Columbus</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://en.wikipedia.org/wiki/Austin,_Texas"
+              target="_blank"
+              >Austin
+            </a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Philadelphia" target="_blank"
+              >Philly</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        World
+        <ul>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Ottawa" target="_blank"
+              >Ottawa</a
+            >
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Sydney" target="_blank"
+              >Sydney</a
+            >
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2>Upcoming Classes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Location</th>
+          <th>Topic</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="blue">New York</td>
+          <td class="pink">JavaScript & jQuery</td>
+        </tr>
+        <tr>
+          <td class="blue">San Francisco</td>
+          <td class="pink">HTML & CSS</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Sign Up!</h2>
+    <form action="post">
+      <label for="name"
+        >Name:<input type="text" name="name" id="name" required
+      /></label>
+      <label for="email"
+        >Email:<input type="email" name="email" id="email" required
+      /></label>
+      <label for="location"
+        >Location
+        <select name="location" id="location">
+          <option value="sanFrancisco">San Francisco</option>
+          <option value="newYork">New York</option>
+          <option value="sydney">Sydney</option>
+          <option value="ottawa">Ottawa</option>
+        </select>
+      </label>
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="female"
+          >Female <input type="radio" name="gender" id="female"
+        /></label>
+        <label for="male"
+          >Male <input type="radio" name="gender" id="male"
+        /></label>
+      </fieldset>
+      <div class="experience">
+        <label for="experience">Experience </label>
+        <textarea
+          name="experience"
+          id="experience"
+          cols="20"
+          rows="2"
+        ></textarea>
+      </div>
+      <input type="submit" value="Sign Up" class="submit" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+body {
+  margin: 0px 30px 15px;
+}
+h1,
+h2 {
+  color: rgb(0, 128, 0);
+  margin-top: 20px;
+}
+span {
+  color: rgb(255, 165, 0);
+}
+ul li ul li {
+  list-style: none;
+}
+ul li ul li::before {
+  content: "•";
+  color: transparent;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 100%;
+  display: inline-flex;
+  width: 0.2em;
+  height: 0.2em;
+  margin-left: -1em;
+  text-align: baseline;
+  line-height: 0.1em;
+}
+table {
+  border: 1px solid rgb(0, 0, 0);
+}
+th,
+td {
+  border: inset;
+}
+.blue {
+  color: rgb(7, 7, 255);
+  font-weight: bolder;
+}
+.pink {
+  color: rgb(250, 93, 216);
+  font-weight: bolder;
+}
+form,
+.experience {
+  display: flex;
+  flex-direction: column;
+}
+label,
+fieldset {
+  color: rgb(255, 0, 0);
+}
+fieldset {
+  padding-top: 20px;
+}
+.experience {
+  width: fit-content;
+}
+.submit {
+  width: fit-content;
+  margin-top: 5px;
+}
