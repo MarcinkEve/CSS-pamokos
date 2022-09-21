@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+}
+
+body {
+  height: 100vh;
+}
+header {
+  height: 20%;
+  background-color: #480512;
+}
+nav,
+footer {
+  height: 10%;
+  background-color: #480512;
+}
+aside {
+  height: 60%;
+  width: 20%;
+  background-color: #480512;
+  float: left;
+}
+main {
+  height: 60%;
+  width: 60%;
+  background-color: #480512;
+  float: left;
+}
+#second {
+  float: right;
+}
+footer {
+  clear: both;
+}
