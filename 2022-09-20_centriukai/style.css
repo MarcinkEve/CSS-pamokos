@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*   overflow: hidden; */
+}
+body {
+  position: relative;
+}
+.parent {
+  /*   margin-top: 6rem; */
+  height: 300px;
+  width: 300px;
+  background-color: grey;
+  position: relative;
+  margin: 0 2rem 1rem;
+  float: left;
+}
+.child {
+  height: 100px;
+  width: 100px;
+  background-color: #e87373;
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+.child2 {
+  height: 100px;
+  width: 100px;
+  background-color: #e87373;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+header {
+  width: 100%;
+  background-color: #e87373;
+  padding: 2rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+nav {
+  margin: auto;
+  width: 100%;
+}
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+  margin-right: 0.5rem;
+}
+img {
+  position: fixed;
+  z-index: -5;
+  opacity: 0.5;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.outer {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  background-color: grey;
+  float: left;
+}
+.inner {
+  height: 30px;
+  width: 50px;
+  padding: 5px;
+  position: absolute;
+  background-color: #e87373;
+}
+.parentTxt {
+  width: 100%;
+  padding: 25px;
+  border: 5px inset black;
+  outline: solid red;
+}
