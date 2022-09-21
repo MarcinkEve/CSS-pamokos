@@ -1,0 +1,60 @@
+/* pirma uzduotis */
+.big_box_first {
+  background-color: #78859c;
+}
+.small_box_first {
+  width: 20vw;
+  background-color: #ebeced;
+  margin: auto;
+}
+
+/* antra uzduotis */
+.small_box_second {
+  background-color: #fcba03;
+  width: 50px;
+  height: 50px;
+}
+.big_box_second {
+  position: relative;
+  background-color: #77a4ed;
+  height: 50vh;
+  width: 50vw;
+  border: #22253d solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* trecia uzduotis */
+.big_box_third {
+  height: 30vh;
+  width: 100vw;
+  background-color: #21d1b1;
+  position: relative;
+}
+.small_box_third {
+  height: 10vh;
+  width: 20vw;
+  background-color: #a64c61;
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  /*   margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+
+ul {
+  list-style: none;
+  /*   list-style-type: "✽"; */
+}
+li::before {
+  content: "○";
+  color: red;
+  height: 10px;
+  width: 10px;
+  margin-right: 5px;
+}
