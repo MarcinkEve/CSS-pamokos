@@ -1,0 +1,117 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a img {
+  width: 30%;
+  margin-left: 1rem;
+}
+header a {
+  text-decoration: none;
+  color: rgb(5, 5, 5);
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+li {
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem 1rem;
+  border: 2px solid transparent;
+}
+main {
+  position: relative;
+  height: fit-content;
+  text-align: center;
+  padding-top: calc(20vh / 2);
+  color: rgb(30, 216, 9);
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 10px;
+}
+nav ul li:hover {
+  background-color: rgb(241, 222, 196);
+  border-radius: 5px;
+}
+nav ul li:active {
+  border: 2px solid rgb(203, 135, 7);
+  border-radius: 5px;
+}
+.hover-underline-animation {
+  display: flex;
+  position: relative;
+  color: rgb(5, 5, 5);
+}
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(5, 5, 5);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:after:active {
+  background-color: rgb(225, 235, 244);
+}
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+main a:link {
+  color: rgb(226, 104, 104);
+}
+main::before {
+  content: "";
+  background-image: url("https://static.scientificamerican.com/sciam/cache/file/9CAE9C60-8BC5-4CA3-95C180EFACDD99FD_source.jpg?w=590&h=800&5DC00F08-F74F-402B-811CEE0D33E933CB");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+section div {
+  border: 1px dashed rgb(0, 0, 0);
+  height: 15%;
+  width: 35%;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  /* float: right; */
+}
+.div {
+  width: 300px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.right {
+  width: 50%;
+  border-radius: 10px;
+  float: right;
+  top: 0;
+  margin-right: 3%;
+  transform: translateY(30%);
+}
+.left {
+  margin: 15% 3% 0;
+}
