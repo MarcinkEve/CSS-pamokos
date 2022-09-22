@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url("./fruits.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.container {
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.container::before {
+  content: '';
+  height: 100%;
+  /* width: 50%; */
+  /* background-color: rgb(255, 255, 255); */
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  position: absolute;
+  opacity: 0.7;
+  z-index: -5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("./fruits.jpg");
+  background-size: cover;
+  clip: rect(0, 100vw, 100vh, 50vw)
+}
