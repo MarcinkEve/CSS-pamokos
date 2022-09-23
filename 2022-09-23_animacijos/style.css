@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.cont {
+    width: 100%;
+    height: 30vh;
+    background-image: url("./img/sea-mountain.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.cont::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    animation-name: darken;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.sun {
+    width: 10%;
+    margin-top: 1rem;
+    animation-name: sun;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+}
+
+.moon {
+    width: 10%;
+    margin-top: 1rem;
+    animation-name: moon;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    bottom: 6rem;
+    right: 8rem;
+}
+
+@keyframes darken {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sun {
+    0% {
+        margin-top: 0;
+        margin-left: 1rem;
+        opacity: 1;
+        transform: rotate(-1turn);
+
+    }
+
+    25% {
+        margin-top: 6rem;
+        margin-left: 7rem;
+        opacity: 0;
+    }
+
+    50% {
+        margin-top: 6rem;
+        margin-left: 7rem;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+}
+
+@keyframes moon {
+    0% {
+        top: 6rem;
+        right: 12rem;
+        opacity: 0;
+        transform: rotate(-1turn);
+
+    }
+
+    50% {
+        top:0;
+        right:1rem;
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+        top: 5rem;
+        right: 12rem;
+    }
+    90% {
+        opacity: 0;
+        top: 5rem;
+        right: 8rem;
+    }
+    100% {
+        opacity: 0;
+        top: 5rem;
+        right: 8rem;
+    }
+}
+
+.night-day {
+    width: 100%;
+    height: 70vh;
+    margin-top: 1rem;
+    background-image: url("./img/day.jpg");
+    background-size: cover;
+    background-position: center;
+    animation-name: day-night;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+.butterfly {
+    width: 15%;
+    animation-name: butterfly;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 11rem;
+    left: 2rem;
+}
+
+.comet {
+    width: 30%;
+    animation-name: comet;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+@keyframes day-night {
+    0% {
+        background-image: url("./img/day.jpg");
+
+    }
+
+    50% {
+        background-image: url("./img/night.jpg");
+
+    }
+
+    100% {
+        background-image: url("./img/day.jpg");
+
+    }
+}
+
+@keyframes butterfly {
+    0% {
+        margin-top: 1rem;
+        margin-left: 2rem;
+        transform: rotateY(30deg)
+    }
+
+    5% {
+        margin-top: 2rem;
+        margin-left: 2.5rem;
+        transform: rotateY(10deg)
+    }
+
+    10% {
+        margin-top: 2.5rem;
+        margin-left: 4rem;
+        transform: rotateY(60deg);
+    }
+
+    15% {
+        margin-top: 1.5rem;
+        margin-left: 4.5rem;
+        transform: rotateY(75deg);
+    }
+
+    20% {
+        margin-top: 2rem;
+        margin-left: 5rem;
+        transform: rotateY(10deg);
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    50% {
+        margin-top: 6rem;
+        margin-left: 7rem;
+        opacity: 0;
+    }
+
+    60% {
+        margin-top: 5rem;
+        margin-left: 7.5rem;
+        transform: rotateY(90deg);
+
+    }
+
+    70% {
+        margin-top: 7rem;
+        margin-left: 8rem;
+        transform: rotateY(130deg);
+
+    }
+
+    75% {
+        margin-top: 9rem;
+        margin-left: 8.5rem;
+        transform: rotateY(125deg);
+
+    }
+
+    80% {
+        margin-top: 8rem;
+        margin-left: 9rem;
+        transform: rotateY(90deg);
+
+    }
+
+    85% {
+        margin-top: 9rem;
+        margin-left: 10rem;
+        transform: rotateY(45deg);
+    }
+
+    90% {
+        margin-top: 10.5rem;
+        margin-left: 11rem;
+        transform: rotateY(75deg);
+    }
+
+    100% {
+        margin-top: 10rem;
+        margin-left: 13rem;
+        transform: rotateY(10deg);
+    }
+}
+
+@keyframes comet {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+        opacity: 0.1;
+    }
+
+    30% {
+        /* margin-top: 2rem;
+        margin-right: 2rem; */
+        opacity: 1;
+    }
+
+    50% {
+        margin-top: 10rem;
+        margin-right: 10rem;
+        opacity: 1;
+    }
+
+    55% {
+        margin-top: 11rem;
+        margin-right: 11rem;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
