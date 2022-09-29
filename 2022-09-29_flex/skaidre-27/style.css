@@ -2,29 +2,106 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 body {
   height: 100vh;
-  border: 8px solid transparent;
+  border: 15px solid transparent;
   background-color: #a9a9a9;
 }
 header {
   background-color: #ff80ff;
+  height: 10%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.container {
+nav {
+  width: 70%;
+}
+nav ul {
   display: flex;
-  margin: 8px 0;
-
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul li {
+  text-transform: uppercase;
+  font-weight: 700;
+  list-style: none;
+}
+input[type="text"] {
+  width: 20%;
+  border: none;
+  padding: 2px;
+  margin-right: 8px;
+}
+input[type="submit"] {
+  padding: 2px 20px;
+  background-color: #333333;
+  color: #fff;
+  border: #333333;
+  margin-right: 20px;
+}
+input[type="submit"]:active {
+  background-color: rgba(84, 84, 84, 0.9);
+  transform: scale(0.95);
 }
 article {
+  width: 80%;
+  padding: 0 10px;
   background-color: #fff;
+}
+h2,
+h3 {
+  font-family: "Praise", cursive;
+  padding: 15px 0;
+}
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: 0.2rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+p,
+li,
+input {
+  font-family: "BenchNine", sans-serif;
+}
+.container {
+  height: 78%;
+  display: flex;
+  margin: 10px 0;
 }
 aside {
+  width: 20%;
   background-color: #ff80ff;
-  margin-left: 8px;
-
+  margin-left: 10px;
+}
+aside ul {
+  padding: 0 35px;
+}
+aside ul li {
+  margin-bottom: 10px;
+  list-style: circle;
+  /* list-style: inside; */
+}
+aside ul li::before {
+  color: #000;
+  content: "•";
+  margin-right: 10px;
 }
 footer {
+  height: 10%;
   background-color: #fff;
+  font-family: "BenchNine", sans-serif;
+  position: relative;
+}
+footer > p {
+  padding: 0 10px;
+  position: absolute;
+  transform: translateY(50%);
+  bottom: 50%;
+  left: 0;
 }
