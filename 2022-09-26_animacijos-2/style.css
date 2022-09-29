@@ -74,7 +74,7 @@ body {
 @keyframes letsnow1 {
   0% {
     margin-top: 0;
-    transition-delay: 5s;
+    /* transition-delay: 5s; */
   }
   50% {
     /* margin-right: 2rem; */
@@ -88,8 +88,7 @@ body {
     margin-top: 0;
   }
   50% {
-    transition-delay: 5s;
-
+    /* transition-delay: 5s; */
     margin-left: 2rem;
   }
   100% {
@@ -99,7 +98,7 @@ body {
 @keyframes letsnow3 {
   from {
     margin-top: 0;
-    transition-delay: 5s;
+    /* transition-delay: 5s; */
   }
   to {
     margin-top: 100%;
@@ -108,7 +107,7 @@ body {
 @keyframes letsnow4 {
   from {
     margin-top: 0;
-    transition-delay: 5s;
+    /* transition-delay: 5s; */
   }
   to {
     margin-top: 100%;
