@@ -2,15 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid #fff;
 }
 body {
-  height: 99.5vh;
+  height: 100vh;
 }
 header {
   background-color: #679bf0;
+  border: 1px solid #fff;
   height: 10%;
-  border: none;
 }
 .container-1 {
   height: 70%;
@@ -26,32 +25,39 @@ header {
 .hero {
   background-color: #70e0c6;
   width: 30%;
+  border: 1px solid #fff;
   height: 30%;
 }
 .sidebar {
   background-color: #d062e3;
   width: 30%;
+  border: 1px solid #fff;
   height: 70%;
 }
 .main {
   background-color: #eb65b5;
   width: 70%;
+  border: 1px solid #fff;
   height: 70%;
 }
 .extra {
   background-color: #5fbbb8;
   width: 70%;
+  border: 1px solid #fff;
   height: 30%;
 }
 .img {
   background-color: #75d989;
+  border: 1px solid #fff;
   width: 70%;
 }
 .related {
   background-color: #ced672;
+  border: 1px solid #fff;
   width: 30%;
 }
 footer {
   background-color: #d9b975;
+  border: 1px solid #fff;
   height: 10%;
 }
