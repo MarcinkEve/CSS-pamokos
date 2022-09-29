@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+header {
+  background-color: rgb(74, 242, 56);
+  height: 10%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px 10px;
+  flex-wrap: wrap;
+}
+nav {
+  background-color: rgb(74, 242, 56);
+  height: 37%;
+}
+aside {
+  background-color: rgb(74, 242, 56);
+  height: 37%;
+}
+article {
+  background-color: rgb(74, 242, 56);
+  height: 75%;
+}
+footer {
+  background-color: rgb(74, 242, 56);
+  height: 10%;
+}
