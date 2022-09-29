@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  border: 8px solid transparent;
+  background-color: #a9a9a9;
+}
+header {
+  background-color: #ff80ff;
+  display: flex;
+}
+.container {
+  display: flex;
+  margin: 8px 0;
+
+}
+article {
+  background-color: #fff;
+}
+aside {
+  background-color: #ff80ff;
+  margin-left: 8px;
+
+}
+footer {
+  background-color: #fff;
+}
