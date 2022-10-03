@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 5px;
+  grid-template-areas:
+    "one one two two two three three three three four four"
+    "one one two two two three three three three four four"
+    "five five two two two three three three three six six"
+    "five five two two two three three three three six six"
+    "seven seven eight nine nine three three three three ten ten"
+    "seven seven eight nine nine three three three three ten ten"
+    "eleven eleven eleven eleven eleven three three three three twelve twelve"
+    "eleven eleven eleven eleven eleven three three three three twelve twelve";
+}
+.div1 {
+  padding-top: 2rem;
+  background-color: #c9316b;
+  grid-area: one;
+}
+.div2 {
+  padding-top: 2rem;
+  background-color: #ca319d;
+  grid-area: two;
+}
+.div3 {
+  padding-top: 2rem;
+  background-color: #ed6e62;
+  grid-area: three;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div4 {
+  padding-top: 2rem;
+  background-color: #efc437;
+  grid-area: four;
+}
+.div5 {
+  padding-top: 2rem;
+  background-color: #538c45;
+  grid-area: five;
+}
+.div6 {
+  padding-top: 2rem;
+  background-color: #267c87;
+  grid-area: six;
+}
+.div7 {
+  padding-top: 2rem;
+  background-color: #799928;
+  grid-area: seven;
+}
+.div8 {
+  padding-top: 2rem;
+  background-color: #478755;
+  grid-area: eight;
+}
+.div9 {
+  padding-top: 2rem;
+  background-color: #30c9c2;
+  grid-area: nine;
+}
+.div10 {
+  padding-top: 2rem;
+  background-color: #31c98f;
+  grid-area: ten;
+}
+.div11 {
+  padding-top: 2rem;
+  background-color: #544079;
+  grid-area: eleven;
+}
+.div12 {
+  padding-top: 2rem;
+  background-color: #de212f;
+  grid-area: twelve;
+}
