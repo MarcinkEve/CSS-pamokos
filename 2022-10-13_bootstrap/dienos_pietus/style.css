@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.navbar {
+    background-image: url("https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-weight: 900;
+}
+
+.navbar::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    z-index: -2;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+a {
+    font-weight: 900;
+    color: #000;
+}
+
+.dropdown-item {
+    background-color: transparent;
+}
+
+
+#pietus {
+    /* background-color: aliceblue; */
+}
