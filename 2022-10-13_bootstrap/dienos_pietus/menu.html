@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container mb-5">
+        <header class="row header fixed-top">
+            <nav class="navbar navbar-expand-lg bg-light d-flex align-items-start">
+                <div class="container-fluid pe-5 ps-5">
+                    <a class="navbar-brand" href="./index.html">Valgykla</a>
+                    <button class="navbar-toggler border-dark border-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <!-- <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#about">Home</a>
+                            </li> -->
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="./index.html#dinners">Šventinės vakarienės</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./index.html#chiefs">Šefai</a></li>
+                                    <li><a class="dropdown-item" href="./index.html#career">Karjera</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./index.html#contacts">Kontaktai</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./index.html#pietus">Dienos pietūs</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link active" href="#dinners">Šventinės vakarienės</a>
+                            </li> -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Meniu
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#starters">Užkandžiai</a></li>
+                                    <li><a class="dropdown-item" href="#soup">Sriubos</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#hots">Karštieji patiekalai</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#orders">Užsakymai į namus</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-secondary" type="submit">
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section id="starters" class="row mt-5 mb-5 pt-sm-5">
+            <h1 class="h1 text-center mb-3 pt-sm-5">Užkandžiai</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1625938144755-652e08e359b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3RhcnRlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+                                ut quam voluptatum iusto consequuntur minima, esse saepe quia
+                                odit aliquid!
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    5&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1577906096429-f73c2c312435?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3RhcnRlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                                atque veniam enim amet perferendis nemo tenetur. Quidem
+                                officia eum magni?
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    7&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1532465909-4e0278962a2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c3RhcnRlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit
+                                longer.
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    10&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1577906096429-f73c2c312435?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3RhcnRlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                                atque veniam enim amet perferendis nemo tenetur. Quidem
+                                officia eum magni?
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    7&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1532465909-4e0278962a2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c3RhcnRlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit
+                                longer.
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    10&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1625938144755-652e08e359b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3RhcnRlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural
+                                lead-in to additional content.
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    5&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="soup" class="row mt-5 mb-5 pt-sm-5">
+            <h1 class="h1 text-center mb-3 pt-sm-5">Sriubos</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://media.istockphoto.com/photos/close-of-up-vegetarian-chili-in-white-bowl-picture-id183384497?k=20&m=183384497&s=612x612&w=0&h=CiahL-J1Cfr0F6Ep-kR-aVoK9_SjTwTC24eOy0EduR4="
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+                                ut quam voluptatum iusto consequuntur minima, esse saepe quia
+                                odit aliquid!
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    7,5&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1616501268826-ee9731c915d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHNvdXBzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                                atque veniam enim amet perferendis nemo tenetur. Quidem
+                                officia eum magni?
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    12&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1607502493639-ea518c5ac080?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fHNvdXBzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit
+                                longer.
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    10,99&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1607502493639-ea518c5ac080?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fHNvdXBzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                                atque veniam enim amet perferendis nemo tenetur. Quidem
+                                officia eum magni?
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    14&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://media.istockphoto.com/photos/close-of-up-vegetarian-chili-in-white-bowl-picture-id183384497?k=20&m=183384497&s=612x612&w=0&h=CiahL-J1Cfr0F6Ep-kR-aVoK9_SjTwTC24eOy0EduR4="
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural
+                                lead-in to additional content.
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    18&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1616501268826-ee9731c915d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHNvdXBzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit
+                                longer.
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    25&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hots" class="row mt-5 mb-5 pt-sm-5">
+            <h1 class="h1 text-center mb-3 pt-sm-5">Karštieji patiekalai</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG90JTIwbWVhbHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+                                ut quam voluptatum iusto consequuntur minima, esse saepe quia
+                                odit aliquid!
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    7,5&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1604908177453-7462950a6a3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG90JTIwbWVhbHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                                atque veniam enim amet perferendis nemo tenetur. Quidem
+                                officia eum magni?
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    12&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvdCUyMG1lYWxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit
+                                longer.
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    10,99&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1626203313658-886791f37e46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGhvdCUyMG1lYWxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                                atque veniam enim amet perferendis nemo tenetur. Quidem
+                                officia eum magni?
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    14&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1625943558005-1a8aa87b1b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fGhvdCUyMG1lYWxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural
+                                lead-in to additional content.
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    18&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit
+                                longer.
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    25&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG90JTIwbWVhbHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+                                ut quam voluptatum iusto consequuntur minima, esse saepe quia
+                                odit aliquid!
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    7,5&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1626203313658-886791f37e46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGhvdCUyMG1lYWxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                                atque veniam enim amet perferendis nemo tenetur. Quidem
+                                officia eum magni?
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    14&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1625943558005-1a8aa87b1b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fGhvdCUyMG1lYWxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural
+                                lead-in to additional content.
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    18&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvdCUyMG1lYWxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit
+                                longer.
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    10,99&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG90JTIwbWVhbHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+                                ut quam voluptatum iusto consequuntur minima, esse saepe quia
+                                odit aliquid!
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    7,5&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top h-50" alt="maistas" />
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Patiekalas Nr.X</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit
+                                longer.
+                            </p>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="card-text f-5">
+                                    25&euro;
+                                </h5>
+                                <button type="button" class="btn btn-secondary">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="orders" class="row mt-5 mb-5 pt-sm-5">
+            <h1 class="h1 text-center mb-3 pt-sm-5">Užsakymai į namus</h1>
+            <div class="col pe-0">
+                <div class="card border-0">
+                    <form class="w-100 pe-sm-3">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="password" class="form-control" id="name" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="phone" class="form-control" id="phone" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="floatingTextarea" class="form-label">Order</label>
+                            <textarea class="form-control" placeholder="Write dishes and quantity" id="floatingTextarea"
+                                rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </div>
+
+    <!-- <div class="row h-25"> -->
+    <footer
+        class="h-25 d-flex align-items-center justify-content-center justify-content-sm-between flex-sm-row flex-column mt-5 mb-5">
+
+        <div class="card bg-transparent border-0 ps-sm-5">
+            <div>
+                <i class="fa fa-hourglass me-2" aria-hidden="true"></i>Darbo laikas:
+                11-23val.
+            </div>
+            <div>
+                <i class="fa fa-map-marker me-3" aria-hidden="true"></i>Laisvės al.23,
+                Kaunas
+            </div>
+        </div>
+        <div class="card bg-transparent border-0 d-flex flex-row pt-3 pt-sm-0">
+            <a href="https://www.facebook.com" target="_blank" class="me-3 text-decoration-none icon">
+                <i class="fa fa-facebook text-primary fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="me-3 icon"><i class="fa fa-twitter text-info fa-2x"
+                    aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" class="me-3 icon"><i
+                    class="fa fa-linkedin text-primary fa-2x" aria-hidden="true"></i></a>
+            <a href="mailto:xxx@gmail.com" target="_blank" class="icon"><i class="fa fa-envelope fa-2x"
+                    aria-hidden="true"></i></a>
+        </div>
+
+        <div class="mt-3 card bg-transparent border-0 pe-sm-5 ">&copy;All rights reserved 2022</div>
+    </footer>
+    <!-- </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
