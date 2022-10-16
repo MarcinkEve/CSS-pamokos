@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.col-2,
+.h-50 .col-6:first-child,
+.h-50 .col-6:nth-child(2) .row:last-child {
+  background-color: #0d6efd;
+}
+.h-50 .col-6:nth-child(2) .row:first-child,
+.h-25 {
+  background-color: #0dcaf0;
+}
+
+/* style for "Title" section */
+.h-50 .col-6:nth-child(2) .row:first-child {
+  height: 10%;
+}
+/* style for "Buy Box" section */
+.h-50 .col-6:nth-child(2) .row:last-child {
+  height: 90%;
+}
