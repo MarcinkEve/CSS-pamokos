@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+.col-3 {
+  background-color: #d5e8d4;
+}
+.col-9 .row:nth-child(1),
+.col-9 .row:nth-child(3) {
+  background-color: #9bce0b;
+  height: 20%;
+
+}
+.col-9 .row:nth-of-type(2) {
+  background-color: transparent;
+  height: 60%;
+}
