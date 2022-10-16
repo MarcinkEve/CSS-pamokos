@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+img {
+  object-fit: cover;
+  object-position: center;
+  height: 20em;
+  overflow: hidden;
+}
+h1,
+.second {
+  text-transform: uppercase;
+}
+.first {
+  background-color: #9effca;
+  color: #259e89;
+}
+.row-one {
+  /* height: 30%; */
+}
+.row-second {
+  background-color: #26a18d;
+  color: #fff;
+  /* height: 40%; */
+}
+/* .row-three {
+  height: 15%;
+}
+
+.row-four {
+  height: 70%;
+} */
