@@ -36,3 +36,9 @@ h1,
 .row-four {
   height: 70%;
 } */
+.color {
+  background-color: aquamarine;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+}
