@@ -3,10 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   height: 100vh;
 }
+
 .img-fluid {
   object-fit: cover;
   object-position: center;
@@ -26,11 +26,16 @@ h1,
   background-color: #26a18d;
   color: #fff;
 }
-
+.row-three {
+  height: 20%;
+}
+.row-four {
+  height: 60%;
+}
 .color {
   background-color: aquamarine;
   height: 100%;
   width: 100%;
-  border: 1px solid #fff;
+  border: 5px solid #fff;
   padding: 0;
 }
