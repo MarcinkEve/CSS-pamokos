@@ -7,11 +7,12 @@
 body {
   height: 100vh;
 }
-img {
+.img-fluid {
   object-fit: cover;
   object-position: center;
-  height: 20em;
+  height: 100%;
   overflow: hidden;
+  margin: 0;
 }
 h1,
 .second {
@@ -21,24 +22,15 @@ h1,
   background-color: #9effca;
   color: #259e89;
 }
-.row-one {
-  /* height: 30%; */
-}
 .row-second {
   background-color: #26a18d;
   color: #fff;
-  /* height: 40%; */
-}
-/* .row-three {
-  height: 15%;
 }
 
-.row-four {
-  height: 70%;
-} */
 .color {
   background-color: aquamarine;
   height: 100%;
   width: 100%;
   border: 1px solid #fff;
+  padding: 0;
 }
