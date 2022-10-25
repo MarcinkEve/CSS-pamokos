@@ -30,9 +30,10 @@ nav,
 }
 .nav-link::before {
   content: "-";
+  color: #000;
   position: absolute;
   top: 15px;
-  left: 40px;
+  left: 37px;
 }
 .nav-link:hover,
 .nav-link:active,
