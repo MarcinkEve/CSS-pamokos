@@ -11,9 +11,11 @@ body {
 img {
   height: 100%;
 }
-nav, .inner {
-  font-family: "Viaoda Libre", cursive;
+nav,
+.inner {
+  /* font-family: "Viaoda Libre", cursive; */
   /* font-family: "Saira", sans-serif; */
+  font-family: "Italiana", serif;
 }
 .hamburger-nav {
   height: 100vh;
@@ -52,11 +54,10 @@ nav, .inner {
     overflow: hidden;
 } */
 .inner p {
-    font-size: 3rem;
-    line-height: 2.5rem;
+  font-size: 3rem;
+  line-height: 2.5rem;
 }
-.inner img{
-
+.inner img {
 }
 
 @media (min-width: 768px) {
@@ -69,5 +70,5 @@ nav, .inner {
   }
   .inner p {
     font-size: 5rem;
-}
+  }
 }
