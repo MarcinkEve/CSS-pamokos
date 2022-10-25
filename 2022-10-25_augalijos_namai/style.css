@@ -18,9 +18,25 @@ nav {
   border-top: 3px solid #000;
   border-bottom: 3px solid transparent;
 }
-@media (min-width: 576px) {
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.nav-item {
+  position: relative;
+}
+.nav-link::before {
+  content: "-";
+  position: absolute;
+  top: 15px;
+  left: 40px;
+}
+
+@media (min-width: 768px) {
   .hamburger-nav {
     height: auto;
     border-top: 3px solid transparent;
+  }
+  .nav-link::before {
+  display: none;
   }
 }
