@@ -6,6 +6,9 @@ body {
   height: 100vh;
   background-color: antiquewhite;
 }
+.navbar-brand {
+  color: #475f34;
+}
 img {
   height: 100%;
 }
@@ -30,8 +33,11 @@ nav {
   top: 15px;
   left: 40px;
 }
-.nav-link:hover, .nav-link:active{
-    color: #475F34 !important;
+.nav-link:hover,
+.nav-link:active,
+.navbar-brand:hover,
+.navbar-brand:active {
+  color: #475f34 !important;
 }
 @media (min-width: 768px) {
   .hamburger-nav {
@@ -39,6 +45,6 @@ nav {
     border-top: 3px solid transparent;
   }
   .nav-link::before {
-  display: none;
+    display: none;
   }
 }
