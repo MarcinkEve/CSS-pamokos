@@ -14,7 +14,8 @@ img {
 }
 nav,
 .inner,
-h2 {
+h2,
+footer {
   /* font-family: "Viaoda Libre", cursive; */
   /* font-family: "Saira", sans-serif; */
   font-family: "Italiana", serif;
@@ -92,7 +93,21 @@ h2 {
   align-items: center;
   /* margin: 0 !important; */
 }
-
+#forests {
+  height: 100% !important;
+}
+#forests > .row {
+  height: 40%;
+}
+#forests img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  overflow: hidden;
+}
+footer {
+  height: fit-content;
+}
 @media (min-width: 768px) {
   .hamburger-nav {
     height: auto;
@@ -113,6 +128,12 @@ h2 {
   }
   .inner p {
     padding: 0 0 2.5rem !important;
+  }
+  #forests {
+    height: 80% !important;
+  }
+  #forests .img {
+    height: 50%;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
