@@ -30,7 +30,9 @@ nav {
   top: 15px;
   left: 40px;
 }
-
+.nav-link:hover, .nav-link:active{
+    color: #475F34 !important;
+}
 @media (min-width: 768px) {
   .hamburger-nav {
     height: auto;
