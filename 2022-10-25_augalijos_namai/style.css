@@ -102,13 +102,13 @@ h2 {
     display: none;
   }
   .inner p {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   #home {
     align-items: center !important;
   }
   .inner {
-    height: 50%;
+    height: 60%;
     width: 70%;
   }
   .inner p {
