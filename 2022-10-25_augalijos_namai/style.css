@@ -4,4 +4,23 @@
 }
 body {
   height: 100vh;
+  background-color: antiquewhite;
+}
+img {
+  height: 100%;
+}
+nav {
+  /* font-family: "Viaoda Libre", cursive; */
+  font-family: "Saira", sans-serif;
+}
+.hamburger-nav {
+  height: 100vh;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid transparent;
+}
+@media (min-width: 576px) {
+  .hamburger-nav {
+    height: auto;
+    border-top: 3px solid transparent;
+  }
 }
