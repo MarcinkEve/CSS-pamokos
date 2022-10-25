@@ -30,60 +30,77 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container-fluid p-0">
+    <div class="container-fluid h-100">
       <!-- navbar START -->
-      <nav class="navbar navbar-expand-md navbar-light bg-white pb-0 fixed-top">
-        <div class="container-fluid d-flex justify-content-between p-0">
-          <div class="d-flex align-items-end p-2">
-            <a class="navbar-brand ps-2" href="#">
-              <img src="./img/logo.JPG" alt="logo" />
-            </a>
-            <a href="#" class="navbar-brand fs-3 d-none d-sm-block mb-md-0 me-md-0"
-              >augalijos namai</a
+      <div class="row">
+        <nav
+          class="navbar navbar-expand-md navbar-light bg-white pb-0 fixed-top pt-0 border border-dark border-3"
+        >
+          <div class="container-fluid d-flex justify-content-between p-0">
+            <div class="d-flex align-items-end p-2">
+              <a class="navbar-brand ps-2" href="#home">
+                <img src="./img/navlogo.JPG" alt="logo" />
+              </a>
+              <a
+                href="#home"
+                class="navbar-brand fs-1 d-none d-sm-block mb-md-0 me-md-0"
+                >augalijos namai</a
+              >
+            </div>
+            <button
+              class="navbar-toggler border-0 me-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse hamburger-nav" id="navbarNav">
+              <ul class="navbar-nav pt-3 pt-md-0 ms-auto">
+                <li class="nav-item pt-2 pt-md-0">
+                  <a
+                    class="nav-link active text-dark fs-4 ps-5 pe-3 ps-lg-4 pe-xl-5"
+                    aria-current="page"
+                    href="#healing"
+                    >gydomieji augalai</a
+                  >
+                </li>
+                <li class="nav-item pt-2 pt-md-0">
+                  <a
+                    class="nav-link active text-dark fs-4 ps-5 pe-3 ps-md-3 ps-lg-3 pe-xl-5"
+                    href="#extinct"
+                    >nykstantys augalai</a
+                  >
+                </li>
+                <li class="nav-item pt-2 pt-md-0">
+                  <a
+                    class="nav-link active text-dark fs-4 ps-5 pe-3 pb-5 pb-sm-0 ps-md-3 ps-lg-3 pe-lg-4 pe-xl-5"
+                    href="#forests"
+                    >miškų nauda</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <!-- <div> -->
-          <button
-            class="navbar-toggler border-0 me-2"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse hamburger-nav" id="navbarNav">
-            <ul class="navbar-nav pt-3 pt-md-0 ms-auto">
-              <li class="nav-item pt-2 pt-md-0">
-                <a
-                  class="nav-link active text-dark fs-4 ps-5 pe-3 ps-lg-4 pe-xl-5"
-                  aria-current="page"
-                  href="#healing"
-                  >gydomieji augalai</a
-                >
-              </li>
-              <li class="nav-item pt-2 pt-md-0">
-                <a
-                  class="nav-link active text-dark fs-4 ps-5 pe-3  ps-md-3 ps-lg-3 pe-xl-5"
-                  href="#extinct"
-                  >nykstantys augalai</a
-                >
-              </li>
-              <li class="nav-item pt-2 pt-md-0">
-                <a
-                  class="nav-link active text-dark fs-4 ps-5 pe-3 pb-5 pb-sm-0  ps-md-3 ps-lg-3 pe-lg-4 pe-xl-5"
-                  href="#forests"
-                  >miškų nauda</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!-- </div> -->
-        </div>
-      </nav>
+        </nav>
+      </div>
       <!-- navbar END -->
+      <!-- section "home" START -->
+      <div
+        class="row pt-5 h-100 border border-dark border-3 d-flex justify-content-center align-items-center"
+        id="home"
+      >
+        <div
+          class="inner d-flex flex-column justify-content-center align-items-center bg-white mt-5 h-50 w-75"
+        >
+          <p class="title text-center pb-5">augalijos namai</p>
+          <img src="./img/logo.JPG" alt="logo" class="img-fluid pt-3" />
+        </div>
+      </div>
+      <!-- section "home" END -->
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
