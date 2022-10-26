@@ -130,6 +130,9 @@ footer p:nth-child(3) {
   .image {
     height: 15em;
   }
+  .forests-text {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
@@ -139,6 +142,9 @@ footer p:nth-child(3) {
   .image {
     height: 20em;
   }
+  .forests-text {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
@@ -146,7 +152,7 @@ footer p:nth-child(3) {
     font-size: 18px;
   }
   .image {
-    height: 20em;
+    height: 24em;
   }
 }
 
