@@ -15,10 +15,13 @@ img {
 nav,
 .inner,
 h2,
-footer {
+footer p {
   /* font-family: "Viaoda Libre", cursive; */
   /* font-family: "Saira", sans-serif; */
   font-family: "Italiana", serif;
+}
+p {
+  font-family: "Khand", sans-serif;
 }
 .hamburger-nav {
   height: 100vh;
@@ -43,7 +46,8 @@ footer {
 .nav-link:focus,
 .navbar-brand:hover,
 .navbar-brand:active,
-.navbar-brand:focus {
+.navbar-brand:focus,
+footer p:nth-child(1) {
   color: #475f34 !important;
 }
 
@@ -93,21 +97,45 @@ footer {
   align-items: center;
   /* margin: 0 !important; */
 }
-#forests {
+/* #forests {
   height: 100% !important;
-}
-#forests > .row {
+} */
+/* #forests > .row {
   height: 40%;
-}
-#forests img {
+} */
+/* #forests img {
   object-fit: cover;
   object-position: center;
   height: 100%;
+  overflow: hidden;
+} */
+/* .forests-container {
+  height: fit-content;
+}
+#forests .card-body {
+  height: fit-content !important;
+}
+.image {
+  height: 25vh;
+  background-image: url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+.image {
+  object-fit: cover;
+  object-position: center;
+  height: 10em;
   overflow: hidden;
 }
 footer {
   height: fit-content;
 }
+footer p:nth-child(2),
+footer p:nth-child(3) {
+  font-size: smaller;
+}
+
 @media (min-width: 768px) {
   .hamburger-nav {
     height: auto;
@@ -129,20 +157,45 @@ footer {
   .inner p {
     padding: 0 0 2.5rem !important;
   }
-  #forests {
-    height: 80% !important;
+  /* #forests {
+    height: 100% !important;
   }
-  #forests .img {
+  .forests-container {
+    height: 100vh;
+    width: 100%;
+  }
+  .image {
     height: 50%;
+    width: 100%;
+  } */
+  .image {
+    height: 15em;
   }
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1023px) {
   .card .img {
     align-items: center;
   }
+  .image {
+    height: 20em;
+  }
 }
-@media (min-width: 1201px) {
+@media (min-width: 1024px) and (max-width: 1200px) {
   .card .img {
     align-items: flex-end;
+  }
+  .forests-text {
+    font-size: 18px;
+  }
+  .image {
+    height: 20em;
+  }
+}
+@media (min-width: 1201px) {
+  .image {
+    height: 28em;
+  }
+  .forests-text {
+    font-size: 22px;
   }
 }
