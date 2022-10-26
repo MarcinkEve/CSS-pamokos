@@ -4,11 +4,8 @@
 }
 body {
   height: 100vh;
-  /* border: 5px solid #000 */
 }
-/* .navbar-brand {
-  color: #475f34;
-} */
+
 img {
   height: 100%;
 }
@@ -16,13 +13,12 @@ nav,
 .inner,
 h2,
 footer p {
-  /* font-family: "Viaoda Libre", cursive; */
-  /* font-family: "Saira", sans-serif; */
   font-family: "Italiana", serif;
 }
 p {
   font-family: "Khand", sans-serif;
 }
+
 .hamburger-nav {
   height: 100vh;
   border-top: 3px solid #000;
@@ -81,8 +77,6 @@ footer p:nth-child(1) {
   margin-top: 4rem !important;
 }
 .inner p {
-  /* font-size: 3rem;
-  line-height: 2.5rem; */
   font-size: 2rem;
   padding: 1rem 0 0 !important;
 }
@@ -90,44 +84,20 @@ footer p:nth-child(1) {
   height: 30% !important;
   padding: 0 !important;
 }
+
 .card .img {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin: 0 !important; */
 }
-/* #forests {
-  height: 100% !important;
-} */
-/* #forests > .row {
-  height: 40%;
-} */
-/* #forests img {
-  object-fit: cover;
-  object-position: center;
-  height: 100%;
-  overflow: hidden;
-} */
-/* .forests-container {
-  height: fit-content;
-}
-#forests .card-body {
-  height: fit-content !important;
-}
-.image {
-  height: 25vh;
-  background-image: url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
 .image {
   object-fit: cover;
   object-position: center;
   height: 10em;
   overflow: hidden;
 }
+
 footer {
   height: fit-content;
 }
@@ -157,21 +127,11 @@ footer p:nth-child(3) {
   .inner p {
     padding: 0 0 2.5rem !important;
   }
-  /* #forests {
-    height: 100% !important;
-  }
-  .forests-container {
-    height: 100vh;
-    width: 100%;
-  }
-  .image {
-    height: 50%;
-    width: 100%;
-  } */
   .image {
     height: 15em;
   }
 }
+
 @media (min-width: 769px) and (max-width: 1023px) {
   .card .img {
     align-items: center;
@@ -180,6 +140,7 @@ footer p:nth-child(3) {
     height: 20em;
   }
 }
+
 @media (min-width: 1024px) and (max-width: 1200px) {
   .card .img {
     align-items: flex-end;
@@ -191,11 +152,15 @@ footer p:nth-child(3) {
     height: 20em;
   }
 }
+
 @media (min-width: 1201px) {
   .image {
     height: 28em;
   }
   .forests-text {
     font-size: 22px;
+  }
+  footer {
+    font-size: 20px;
   }
 }
