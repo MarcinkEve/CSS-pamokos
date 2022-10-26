@@ -142,9 +142,6 @@ footer p:nth-child(3) {
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
-  .card .img {
-    align-items: flex-end;
-  }
   .forests-text {
     font-size: 18px;
   }
@@ -154,6 +151,9 @@ footer p:nth-child(3) {
 }
 
 @media (min-width: 1201px) {
+  .card .img {
+    align-items: flex-end;
+  }
   .image {
     height: 28em;
   }
