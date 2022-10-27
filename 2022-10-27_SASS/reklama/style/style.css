@@ -21,7 +21,7 @@ body {
   width: 90%;
   height: 50%;
   border: 8px solid #fff;
-  padding: 5%;
+  padding: 0 5%;
 }
 .container .big-lemon {
   display: flex;
@@ -100,7 +100,7 @@ body {
 .container .text {
   width: 50%;
   font-size: 60px;
-  margin-right: 20%;
+  margin: 0 10% 0 5%;
   padding-bottom: 45px;
   color: #fff;
   font-family: "Ubuntu Condensed", sans-serif;
@@ -112,7 +112,16 @@ body {
   font-weight: 800;
   font-family: "Barlow", sans-serif;
 }
-.container .small-lemon {
+.container .lemon-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.container .lemon-button .small-lemon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   width: 120px;
   border: 10px solid #000;
@@ -122,25 +131,33 @@ body {
   font-size: 22px;
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 130px;
+}
+.container .lemon-button button {
+  background-color: #f06002;
+  border: transparent;
+  width: 270px;
+  padding: 25px 30px;
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+}
+.container .lemon-button button .arrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  margin-bottom: 5px;
+}
+.container .lemon-button button .arrow-right {
+  transform: rotate(45deg) skew(-10deg, -10deg);
 }
 
 .big-lemon,
 .small-lemon {
   background-color: #ffec00;
   color: #000;
-}
-
-.arrow {
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  border-top: 2px solid #000;
-  border-right: 2px solid #000;
-}
-
-.arrow-right {
-  transform: rotate(45deg) skew(-15deg, -15deg);
 }/*# sourceMappingURL=style.css.map */

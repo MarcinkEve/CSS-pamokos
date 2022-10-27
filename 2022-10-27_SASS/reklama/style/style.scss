@@ -16,7 +16,7 @@ body {
   width: $containerWidth;
   height: $containerHeight;
   border: 8px solid #fff;
-  padding: $padding;
+  padding: 0 $padding;
   .big-lemon {
     @include flexBetween;
     height: 230px;
@@ -92,48 +92,64 @@ body {
   .text {
     width: 50%;
     font-size: 60px;
-    margin-right: 20%;
+    margin: 0 10% 0 5%;
     // line-height: 55px;
     padding-bottom: 45px;
     color: $colorWhite;
     font-family: "Ubuntu Condensed", sans-serif;
     font-weight: 800;
     span {
-      color: $lemonColor;
+      color: $colorLemon;
       text-transform: $uppercase;
       font-weight: 800;
       font-family: "Barlow", sans-serif;
     }
   }
-  .small-lemon {
-    height: 120px;
-    width: 120px;
-    border: 10px solid $colorBlack;
-    border-radius: $borderRadiusSmall;
-    color: $colorBlack;
-    font-weight: 900;
-    font-size: 22px;
-    text-transform: $uppercase;
-    font-family: "Source Sans Pro", sans-serif;
-    // padding: calc(65%/2) calc(10%/2);
-    @include perfectCenter;
+  .lemon-button {
+    @include flexEndVertical;
+    .small-lemon {
+      @include perfectCenter;
+      height: 120px;
+      width: 120px;
+      border: 10px solid $colorBlack;
+      border-radius: $borderRadiusSmall;
+      color: $colorBlack;
+      font-weight: 900;
+      font-size: 22px;
+      text-transform: $uppercase;
+      font-family: "Source Sans Pro", sans-serif;
+      margin-bottom: 130px;
+      // padding: calc(65%/2) calc(10%/2);
+    }
+    button {
+      background-color: $colorOrange;
+      border: transparent;
+      width: 270px;
+      padding: 25px 30px;
+      font-size: 45px;
+      font-weight: 700;
+      color: $colorWhite;
+      text-transform: $uppercase;
+      font-family: "Barlow", sans-serif;
+
+      // arrow on the buttom START
+      .arrow {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-top: 5px solid $colorWhite;
+        border-right: 5px solid $colorWhite;
+        margin-bottom: 5px;
+      }
+      .arrow-right {
+        transform: rotate(45deg) skew(-10deg, -10deg);
+      }
+      // arrow on the buttom END
+    }
   }
 }
 .big-lemon,
 .small-lemon {
-  background-color: $lemonColor;
-  color: #000;
+  background-color: $colorLemon;
+  color: $colorBlack;
 }
-
-// arrow on the buttom START
-.arrow {
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  border-top: 2px solid #000;
-  border-right: 2px solid #000;
-}
-.arrow-right {
-  transform: rotate(45deg) skew(-15deg, -15deg);
-}
-// arrow on the buttom END
