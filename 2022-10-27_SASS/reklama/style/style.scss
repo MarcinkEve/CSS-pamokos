@@ -89,6 +89,23 @@ body {
       }
     }
   }
+  .text {
+    width: 50%;
+    font-size: 60px;
+    margin-right: 20%;
+    // line-height: 55px;
+    padding-bottom: 45px;
+    color: $colorWhite;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 800;
+
+    span {
+      color: $lemonColor;
+      text-transform: $uppercase;
+      font-weight: 800;
+      font-family: "Barlow", sans-serif;
+    }
+  }
 }
 .big-lemon,
 .small-lemon {
