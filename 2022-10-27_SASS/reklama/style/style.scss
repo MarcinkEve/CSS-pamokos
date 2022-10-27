@@ -1,9 +1,12 @@
 @import "variables", "mixins";
-
+* {
+  box-sizing: border-box;
+}
 body {
   height: 100vh;
   @include perfectCenter;
   background-color: $bg-color;
+  font-family: "Ubuntu", sans-serif;
 }
 .container {
   @include flexBetween;
@@ -16,10 +19,75 @@ body {
   padding: $padding;
   .big-lemon {
     @include flexBetween;
-    height: 60%;
-    width: 16%;
-    position: relative;
+    height: 230px;
+    width: 210px;
     border-radius: $borderRadius;
+    position: relative;
+    .friday {
+      @include perfectCenter;
+      background-color: $colorBlack;
+      color: #fff;
+      font-weight: bold;
+      font-size: larger;
+      text-transform: $uppercase;
+      padding-left: 4%;
+      height: 33%;
+      width: 40%;
+      position: absolute;
+      top: 0;
+      left: 43%;
+      //   border-top: 10px solid;
+      //   border-image-slice: 1;
+      //   border-width: 5px;
+      //   border-image-source: linear-gradient(to left, #eee8f8, #6a696a);
+      &::before {
+        content: " ";
+        // background-color: red;
+        background-color: $colorBlack;
+        position: absolute;
+        height: 99%;
+        width: 10%;
+        transform: skew(5deg);
+        left: -3px;
+      }
+      &::after {
+        content: " ";
+        // background-color: red;
+        background-color: $colorBlack;
+        position: absolute;
+        height: 99%;
+        width: 10%;
+        transform: skew(-5deg);
+        right: -3px;
+      }
+    }
+    .price-container {
+      @include flexBetween;
+      .price {
+        font-size: 100px;
+        font-weight: 900;
+        letter-spacing: -7px;
+        margin: 30% 0 0 20%;
+        // width: 150px;
+      }
+      .price-etc {
+        @include flexCenterVertical;
+        font-weight: 900;
+        margin: 35% 0 0 5%;
+        line-height: 25px;
+        letter-spacing: -3px;
+        font-family: "Source Sans Pro", sans-serif;
+        .cents {
+          font-size: 30px;
+        }
+        .currency {
+          font-size: 40px;
+        }
+        .duration {
+          text-transform: $uppercase;
+        }
+      }
+    }
   }
 }
 .big-lemon,
