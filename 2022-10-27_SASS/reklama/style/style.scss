@@ -8,6 +8,7 @@ body {
   background-color: $bg-color;
   font-family: "Ubuntu", sans-serif;
 }
+
 .container {
   @include flexBetween;
   background-image: url("https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
@@ -36,13 +37,8 @@ body {
       position: absolute;
       top: 0;
       left: 43%;
-      //   border-top: 10px solid;
-      //   border-image-slice: 1;
-      //   border-width: 5px;
-      //   border-image-source: linear-gradient(to left, #eee8f8, #6a696a);
       &::before {
         content: " ";
-        // background-color: red;
         background-color: $colorBlack;
         position: absolute;
         height: 99%;
@@ -52,7 +48,6 @@ body {
       }
       &::after {
         content: " ";
-        // background-color: red;
         background-color: $colorBlack;
         position: absolute;
         height: 99%;
@@ -68,7 +63,6 @@ body {
         font-weight: 900;
         letter-spacing: -7px;
         margin: 30% 0 0 20%;
-        // width: 150px;
       }
       .price-etc {
         @include flexCenterVertical;
@@ -93,7 +87,6 @@ body {
     width: 50%;
     font-size: 60px;
     margin: 0 10% 0 5%;
-    // line-height: 55px;
     padding-bottom: 45px;
     color: $colorWhite;
     font-family: "Ubuntu Condensed", sans-serif;
@@ -119,7 +112,6 @@ body {
       text-transform: $uppercase;
       font-family: "Source Sans Pro", sans-serif;
       margin-bottom: 130px;
-      // padding: calc(65%/2) calc(10%/2);
     }
     button {
       background-color: $colorOrange;
@@ -131,7 +123,6 @@ body {
       color: $colorWhite;
       text-transform: $uppercase;
       font-family: "Barlow", sans-serif;
-
       // arrow on the buttom START
       .arrow {
         display: inline-block;
@@ -148,6 +139,7 @@ body {
     }
   }
 }
+
 .big-lemon,
 .small-lemon {
   background-color: $colorLemon;
