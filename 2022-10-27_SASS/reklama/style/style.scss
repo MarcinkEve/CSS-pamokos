@@ -1,0 +1,42 @@
+@import "variables", "mixins";
+
+body {
+  height: 100vh;
+  @include perfectCenter;
+  background-color: $bg-color;
+}
+.container {
+  @include flexBetween;
+  background-image: url("https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  background-position: center;
+  width: $containerWidth;
+  height: $containerHeight;
+  border: 8px solid #fff;
+  padding: $padding;
+  .big-lemon {
+    @include flexBetween;
+    height: 60%;
+    width: 16%;
+    position: relative;
+    border-radius: $borderRadius;
+  }
+}
+.big-lemon,
+.small-lemon {
+  background-color: $lemonColor;
+  color: #000;
+}
+
+// arrow on the buttom START
+.arrow {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+}
+.arrow-right {
+  transform: rotate(45deg) skew(-15deg, -15deg);
+}
+// arrow on the buttom END
