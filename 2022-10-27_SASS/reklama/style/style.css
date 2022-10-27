@@ -64,7 +64,7 @@ body {
   height: 99%;
   width: 10%;
   transform: skew(-5deg);
-  right: -3px;
+  right: -4px;
 }
 .container .big-lemon .price-container {
   display: flex;
@@ -111,6 +111,20 @@ body {
   text-transform: uppercase;
   font-weight: 800;
   font-family: "Barlow", sans-serif;
+}
+.container .small-lemon {
+  height: 120px;
+  width: 120px;
+  border: 10px solid #000;
+  border-radius: 60px 20px 60px 20px;
+  color: #000;
+  font-weight: 900;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .big-lemon,

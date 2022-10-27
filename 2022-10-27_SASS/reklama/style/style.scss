@@ -21,7 +21,7 @@ body {
     @include flexBetween;
     height: 230px;
     width: 210px;
-    border-radius: $borderRadius;
+    border-radius: $borderRadiusBig;
     position: relative;
     .friday {
       @include perfectCenter;
@@ -58,7 +58,7 @@ body {
         height: 99%;
         width: 10%;
         transform: skew(-5deg);
-        right: -3px;
+        right: -4px;
       }
     }
     .price-container {
@@ -98,13 +98,25 @@ body {
     color: $colorWhite;
     font-family: "Ubuntu Condensed", sans-serif;
     font-weight: 800;
-
     span {
       color: $lemonColor;
       text-transform: $uppercase;
       font-weight: 800;
       font-family: "Barlow", sans-serif;
     }
+  }
+  .small-lemon {
+    height: 120px;
+    width: 120px;
+    border: 10px solid $colorBlack;
+    border-radius: $borderRadiusSmall;
+    color: $colorBlack;
+    font-weight: 900;
+    font-size: 22px;
+    text-transform: $uppercase;
+    font-family: "Source Sans Pro", sans-serif;
+    // padding: calc(65%/2) calc(10%/2);
+    @include perfectCenter;
   }
 }
 .big-lemon,
