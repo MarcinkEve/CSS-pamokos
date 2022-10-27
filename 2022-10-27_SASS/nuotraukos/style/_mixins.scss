@@ -1,0 +1,17 @@
+@mixin customFilter($proc) {
+  filter: brightness($proc);
+}
+
+@mixin customFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin objectFit {
+  object-fit: cover;
+  object-position: center;
+  height: 45%;
+  width: 30%;
+}
