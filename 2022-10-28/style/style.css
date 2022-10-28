@@ -15,7 +15,7 @@ header {
   width: 100%;
   padding: 1rem;
   z-index: 2;
-  background-color: #14dc50;
+  background-color: #dc143c;
 }
 
 .menu-wrap {
@@ -95,13 +95,22 @@ header {
 .menu-wrap .toggler:checked ~ .nav {
   visibility: visible;
 }
+.menu-wrap .toggler:checked ~ .menu-nav {
+  transform: translateY(0%);
+  transition: all 1s;
+}
+.menu-wrap .toggler:checked ~ .menu-nav__item {
+  transform: translateX(0%);
+  transition: all 1s;
+}
 .menu-wrap .toggler:checked ~ .nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.menu-wrap .nav {
-  background-color: #dc143c;
+
+.nav {
+  background-color: #14dc50;
   visibility: hidden;
   display: flex;
   justify-content: center;
@@ -111,19 +120,36 @@ header {
   left: 0;
   width: 100vw;
   opacity: 0.8;
+}
+.nav .menu-nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-}
-ul li {
+  width: 100vw;
+  overflow: hidden;
+  background: #dc143c;
   list-style-type: none;
-  padding: 0.25rem;
-  text-align: center;
+  transform: translate(0, -10%);
+  transition: all 1s;
 }
-ul li a {
+.nav .menu-nav__item {
+  transform: translateX(0vw);
+  transition: all 1s;
+}
+.nav .menu-nav__link {
+  display: inline-block;
+  font-size: 11px;
+  text-transform: uppercase;
   padding: 0.3rem;
+  font-weight: 300;
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
   font-size: 11px;
+}
+.nav .menu-nav__link:hover {
+  color: #dc143c;
 }
 
 .toggler:checked ~ .nav ul li:nth-child(1) {
