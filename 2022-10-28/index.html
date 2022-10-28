@@ -4,31 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teksto animacija</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Burger menu</title>
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <h1>
-        Hello,
-        <span></span>
-      </h1>
-      <h1>
-        my name is
-        <span></span>
-      </h1>
-      <h1>
-        Evelina.
-        <span></span>
-      </h1>
-      <h1>
-        I'm passionate
-        <span></span>
-      </h1>
-      <h1>
-        about learning
-        <span></span>
-      </h1>
-    </div>
+    <header class="menu-wrap">
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger"><div></div></div>
+      <!-- <div class="menu-btn">
+        <span class="menu-btn__burger open"></span>
+      </div> -->
+      <nav class="nav">
+        <ul class="menu-nav">
+          <li class="menu-nav__item active">
+            <a href="#" class="menu-nav__link">Home</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#" class="menu-nav__link">About me</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#" class="menu-nav__link">My projects</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#" class="menu-nav__link">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   </body>
 </html>
