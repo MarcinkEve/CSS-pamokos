@@ -100,7 +100,8 @@ body {
 .container .text {
   width: 50%;
   font-size: 60px;
-  margin: 0 10% 0 5%;
+  margin: 0 10% 0 0;
+  padding: 0 10% 0 0;
   padding-bottom: 45px;
   color: #fff;
   font-family: "Ubuntu Condensed", sans-serif;
