@@ -1,0 +1,114 @@
+@import "variables", "mixins";
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  @include perfectCenter;
+}
+.container {
+  position: relative;
+  background-color: cyan;
+  border: 20px solid $colorWhite;
+  height: 100%;
+  width: 50%;
+  padding: $size2;
+  overflow: hidden;
+  .sun {
+    position: absolute;
+    top: 4rem;
+    left: 5rem;
+    width: 100px;
+    height: 100px;
+    filter: blur(0.2rem);
+    border: $colorTransparent;
+    border-radius: $borderRadius;
+    box-shadow: rgba(95, 16, 3, 0.56) 0px 5px 15px;
+    background-color: $colorYellow;
+    animation: sun 3s linear 0.01s, pulsate 3s linear 0.5s infinite;
+  }
+  .text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    @include perfectCenter;
+    text-align: center;
+    // animation: fadeIn 5s ease 5s;
+    // animation-delay: 20s;
+    span {
+      opacity: 0;
+      padding: $size1;
+      font-family: "Shadows Into Light", cursive;
+      font-size: $size4;
+      animation: fadeIn 10s linear -15s forwards, flip 10s infinite 10s;
+    }
+  }
+}
+
+@keyframes sun {
+  0% {
+    left: -10rem;
+    top: 25rem;
+  }
+  // 50%{
+  //     left: 0rem;
+  //     top: 10rem;
+  // }
+  100% {
+    left: 5rem;
+    top: 4rem;
+  }
+}
+@keyframes pulsate {
+  0% {
+    box-shadow: inset 0 0 5px $colorYellow, rgba(255, 165, 0, 1) 0px 5px 40px;
+    border-color: transparent;
+  }
+  50% {
+    box-shadow: inset 0 0 20px $colorOrange, rgba(255, 165, 0, 1) 0px 5px 10px;
+    border-color: transparent;
+  }
+  100% {
+    border-color: transparent;
+    box-shadow: inset 0 0 5px $colorYellow, rgba(255, 165, 0, 1) 0px 5px 40px;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flip {
+  5% {
+    transform: rotateX(1turn);
+  }
+  10% {
+    transform: rotateX(2turn);
+  }
+  20% {
+    transform: rotateX(3turn);
+  }
+  40% {
+    transform: rotateX(4turn);
+  }
+  70%,
+  100% {
+    transform: rotateX(5turn);
+  }
+}
+@for $i from 1 through 9 {
+  .text span:nth-child(#{$i}) {
+    animation-delay: ($i * 0.1s) + 0.15s;
+  }
+}

@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  background-color: cyan;
+  border: 20px solid #fff;
+  height: 100%;
+  width: 50%;
+  padding: 2rem;
+  overflow: hidden;
+}
+.container .sun {
+  position: absolute;
+  top: 4rem;
+  left: 5rem;
+  width: 100px;
+  height: 100px;
+  filter: blur(0.2rem);
+  border: transparent;
+  border-radius: 50%;
+  box-shadow: rgba(95, 16, 3, 0.56) 0px 5px 15px;
+  background-color: #ffff00;
+  -webkit-animation: sun 3s linear 0.01s, pulsate 3s linear 0.5s infinite;
+          animation: sun 3s linear 0.01s, pulsate 3s linear 0.5s infinite;
+}
+.container .text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .text span {
+  opacity: 0;
+  padding: 1rem;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 4rem;
+  -webkit-animation: fadeIn 10s linear -15s forwards, flip 10s infinite 10s;
+          animation: fadeIn 10s linear -15s forwards, flip 10s infinite 10s;
+}
+
+@-webkit-keyframes sun {
+  0% {
+    left: -10rem;
+    top: 25rem;
+  }
+  100% {
+    left: 5rem;
+    top: 4rem;
+  }
+}
+
+@keyframes sun {
+  0% {
+    left: -10rem;
+    top: 25rem;
+  }
+  100% {
+    left: 5rem;
+    top: 4rem;
+  }
+}
+@-webkit-keyframes pulsate {
+  0% {
+    box-shadow: inset 0 0 5px #ffff00, rgb(255, 165, 0) 0px 5px 40px;
+    border-color: transparent;
+  }
+  50% {
+    box-shadow: inset 0 0 20px #ffa500, rgb(255, 165, 0) 0px 5px 10px;
+    border-color: transparent;
+  }
+  100% {
+    border-color: transparent;
+    box-shadow: inset 0 0 5px #ffff00, rgb(255, 165, 0) 0px 5px 40px;
+  }
+}
+@keyframes pulsate {
+  0% {
+    box-shadow: inset 0 0 5px #ffff00, rgb(255, 165, 0) 0px 5px 40px;
+    border-color: transparent;
+  }
+  50% {
+    box-shadow: inset 0 0 20px #ffa500, rgb(255, 165, 0) 0px 5px 10px;
+    border-color: transparent;
+  }
+  100% {
+    border-color: transparent;
+    box-shadow: inset 0 0 5px #ffff00, rgb(255, 165, 0) 0px 5px 40px;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flip {
+  5% {
+    transform: rotateX(1turn);
+  }
+  10% {
+    transform: rotateX(2turn);
+  }
+  20% {
+    transform: rotateX(3turn);
+  }
+  40% {
+    transform: rotateX(4turn);
+  }
+  70%, 100% {
+    transform: rotateX(5turn);
+  }
+}
+@keyframes flip {
+  5% {
+    transform: rotateX(1turn);
+  }
+  10% {
+    transform: rotateX(2turn);
+  }
+  20% {
+    transform: rotateX(3turn);
+  }
+  40% {
+    transform: rotateX(4turn);
+  }
+  70%, 100% {
+    transform: rotateX(5turn);
+  }
+}
+.text span:nth-child(1) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.text span:nth-child(2) {
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
+}
+
+.text span:nth-child(3) {
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+}
+
+.text span:nth-child(4) {
+  -webkit-animation-delay: 0.55s;
+          animation-delay: 0.55s;
+}
+
+.text span:nth-child(5) {
+  -webkit-animation-delay: 0.65s;
+          animation-delay: 0.65s;
+}
+
+.text span:nth-child(6) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.text span:nth-child(7) {
+  -webkit-animation-delay: 0.85s;
+          animation-delay: 0.85s;
+}
+
+.text span:nth-child(8) {
+  -webkit-animation-delay: 0.95s;
+          animation-delay: 0.95s;
+}
+
+.text span:nth-child(9) {
+  -webkit-animation-delay: 1.05s;
+          animation-delay: 1.05s;
+}/*# sourceMappingURL=style.css.map */
