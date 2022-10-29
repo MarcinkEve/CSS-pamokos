@@ -1,9 +1,14 @@
 @mixin transition {
-  transition: all 1s;
+  transition: all 2s;
 }
 @mixin flexRowStart {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+}
+@mixin flexRowEnd {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 @mixin perfectCenter {
