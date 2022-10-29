@@ -163,16 +163,19 @@ header {
     &:checked ~ .nav {
       visibility: visible;
       background-color: $colorDark;
+      //   animation: text-slide-left 2s;
+      transform: translate(0%, 0%); ///// ++++
       @include transition;
-      animation: text-slide-left 2s;
-      //   transform: translate(0%, 0%); ///// ++++
     }
     &:checked ~ .menu-nav {
+      //   transform: translate(0%, 0%);
+      //   @include transition;
       @include perfectCenter;
       //   animation: text-slide-items 2s;
+      //   @include transition;
     }
     &:checked ~ .menu-nav__item {
-      // transform: translateX(10vw);
+      transform: translateX(0vw);
       @include transition;
       //   animation: text-slide-items 2s;
     }
@@ -185,10 +188,13 @@ header {
   right: 0;
   width: 100vw;
   opacity: 0.8;
-  // transform: translate(0%, -100%); ///// ++++
-  // @include transition;
-  animation: text-slide-up 2s;
+  transform: translate(0%, -100%); ///// ++++
+  @include transition;
+  //   animation: text-slide-up 2s;   ///// ++++
   .menu-nav {
+    // transform: translate(0%, 0%); ///// ++++
+    // @include transition;
+    background-color: chocolate;
     @include perfectColCenter;
     height: 100vh;
     width: 100vw;
@@ -198,15 +204,14 @@ header {
     // @include transition; // nereikia, nes atsiranda linkai po slide up
     &__item {
       // @include perfectCenter;
-      // transform: translateX(50vw);
+      //   transform: translateX(50vw);
       @include transition;
       // animation: text-slide-items 2s;
     }
     //****************************************************
     &__link {
       display: inline-block;
-      // font-size: 2rem;
-      font-size: 32px;
+      font-size: 2rem;
       text-transform: $uppercase;
       padding: 1.7rem 0;
       font-weight: 300;
@@ -227,16 +232,16 @@ header {
     transform: translate(0, 0);
   }
 }
-@keyframes text-slide-items {
-  from {
-    transform: translateX(100vw);
-    // background-color: red;
-  }
-  to {
-    transform: translateX(0vw);
-    background-color: green;
-  }
-}
+// @keyframes text-slide-items {
+//   from {
+//     transform: translate(10%, 10%);
+//     // background-color: red;
+//   }
+//   to {
+//     transform: translateX(0, 0);
+//     background-color: green;
+//   }
+// }
 @keyframes text-slide-up {
   from {
     transform: translate(0%, 0%); ///// ++++
@@ -245,6 +250,14 @@ header {
     transform: translate(0%, -100%); ///// ++++
   }
 }
+// @keyframes text-slide-down {
+//   from {
+//     transform: translate(0%, -100%); ///// ++++
+//   }
+//   to {
+//     transform: translate(0%, 0%); ///// ++++
+//   }
+// }
 
 @for $i from 1 through 4 {
   .toggler:checked ~ .menu-nav__item:nth-child(#{$i}) {
