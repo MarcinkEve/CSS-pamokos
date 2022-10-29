@@ -15,7 +15,7 @@ header {
   width: 100%;
   padding: 1.5rem;
   z-index: 2;
-  background-color: #dc143c;
+  background-color: #ff652f;
 }
 
 .menu-wrap {
@@ -47,7 +47,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  transition: all 2s;
+  transition: all 1s;
   /* Hamburger Lines - Top & Bottom */
 }
 .menu-wrap .hamburger div::before {
@@ -95,7 +95,7 @@ header {
 .menu-wrap .toggler:checked ~ .nav {
   visibility: visible;
   background-color: #272727;
-  transition: all 2s;
+  transition: all 1s;
   -webkit-animation: text-slide-left 2s;
           animation: text-slide-left 2s;
 }
@@ -105,7 +105,7 @@ header {
   align-items: center;
 }
 .menu-wrap .toggler:checked ~ .menu-nav__item {
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .nav {
@@ -129,7 +129,7 @@ header {
   list-style-type: none;
 }
 .nav .menu-nav__item {
-  transition: all 2s;
+  transition: all 1s;
 }
 .nav .menu-nav__link {
   display: inline-block;
@@ -141,7 +141,7 @@ header {
   text-decoration: none;
 }
 .nav .menu-nav__link:hover {
-  color: #dc143c;
+  color: #ff652f;
 }
 
 @-webkit-keyframes text-slide-left {
