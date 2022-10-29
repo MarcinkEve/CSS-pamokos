@@ -45,6 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: #fff;
 }
 .container .text span {
   opacity: 0;
@@ -53,6 +54,362 @@ body {
   font-size: 4rem;
   -webkit-animation: fadeIn 10s linear -15s forwards, flip 10s infinite 10s;
           animation: fadeIn 10s linear -15s forwards, flip 10s infinite 10s;
+}
+.container .flowers {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.container .flowers .stem {
+  background: linear-gradient(90deg, #0f7249, #20ea20);
+  width: 10px;
+  border-radius: 30px 30px 0 0;
+}
+.container .flowers .leaf {
+  width: 60px;
+  height: 60px;
+  border-radius: 40px 0 40px 0;
+  background-color: #0f7249;
+}
+.container .flowers .center {
+  width: 45px;
+  height: 45px;
+  background: radial-gradient(#ffff00, #ffa500);
+  border-radius: 50%;
+}
+.container .flowers .first-flower {
+  position: relative;
+}
+.container .flowers .first-flower .stem {
+  transform: translateY(100%);
+  -webkit-animation: grow 3s linear 2.3s forwards;
+          animation: grow 3s linear 2.3s forwards;
+  height: 15rem;
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  z-index: 2;
+}
+.container .flowers .first-flower .green {
+  background: linear-gradient(#20ea20, #0f7249);
+  position: absolute;
+  bottom: 7rem;
+  right: -5.5rem;
+  transform: rotate(15deg);
+  z-index: 1;
+  opacity: 0;
+  -webkit-animation: fadeIn 2s linear 3s forwards;
+          animation: fadeIn 2s linear 3s forwards;
+}
+.container .flowers .first-flower .bloom {
+  position: absolute;
+  top: -12rem;
+  left: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  -webkit-animation: rotation1 4s ease-in 7s infinite;
+          animation: rotation1 4s ease-in 7s infinite;
+}
+.container .flowers .first-flower .bloom .top,
+.container .flowers .first-flower .bloom .bottom {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .flowers .first-flower .bloom .leaf {
+  background: linear-gradient(#800080, #fff);
+}
+.container .flowers .first-flower .bloom .one {
+  position: absolute;
+  top: -110px;
+  right: 5px;
+  transform: rotate(75deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 7.1s forwards;
+          animation: growLeaves 0.5s linear 7.1s forwards;
+}
+.container .flowers .first-flower .bloom .two {
+  position: absolute;
+  top: -130px;
+  right: -30px;
+  transform: rotate(135deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 7.1s forwards;
+          animation: growLeaves 0.5s linear 7.1s forwards;
+}
+.container .flowers .first-flower .bloom .three {
+  position: absolute;
+  top: -110px;
+  right: -60px;
+  transform: rotate(15deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 7.1s forwards;
+          animation: growLeaves 0.5s linear 7.1s forwards;
+}
+.container .flowers .first-flower .bloom .four {
+  position: absolute;
+  top: -70px;
+  right: -60px;
+  transform: rotate(75deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 7.1s forwards;
+          animation: growLeaves 0.5s linear 7.1s forwards;
+}
+.container .flowers .first-flower .bloom .five {
+  position: absolute;
+  top: -50px;
+  right: -30px;
+  transform: rotate(135deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 7.1s forwards;
+          animation: growLeaves 0.5s linear 7.1s forwards;
+}
+.container .flowers .first-flower .bloom .six {
+  position: absolute;
+  top: -70px;
+  right: 5px;
+  transform: rotate(15deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 7.1s forwards;
+          animation: growLeaves 0.5s linear 7.1s forwards;
+}
+.container .flowers .first-flower .bloom .center {
+  position: absolute;
+  top: -80px;
+  right: -18px;
+  z-index: 99;
+  opacity: 0;
+  -webkit-animation: growCenter 2s linear 5s forwards;
+          animation: growCenter 2s linear 5s forwards;
+}
+.container .flowers .second-flower {
+  margin-right: 5rem;
+  position: relative;
+}
+.container .flowers .second-flower .stem {
+  transform: translateY(100%);
+  -webkit-animation: grow 4s linear 3s forwards;
+          animation: grow 4s linear 3s forwards;
+  height: 23rem;
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  z-index: 2;
+}
+.container .flowers .second-flower .green {
+  background: linear-gradient(#20ea20, #0f7249);
+  position: absolute;
+  bottom: 10rem;
+  right: -0.7rem;
+  transform: rotate(75deg);
+  z-index: 1;
+  opacity: 0;
+  -webkit-animation: fadeIn 2s linear 2s forwards;
+          animation: fadeIn 2s linear 2s forwards;
+}
+.container .flowers .second-flower .bloom {
+  position: absolute;
+  top: -25rem;
+  left: -0.8rem;
+  transform: rotate(150deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  -webkit-animation: rotation2 4s ease-in 7s infinite;
+          animation: rotation2 4s ease-in 7s infinite;
+}
+.container .flowers .second-flower .bloom .top,
+.container .flowers .second-flower .bloom .bottom {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .flowers .second-flower .bloom .leaf {
+  background: linear-gradient(#ff6347, #800080);
+}
+.container .flowers .second-flower .bloom .one {
+  position: absolute;
+  top: -110px;
+  right: 5px;
+  transform: rotate(75deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 6s forwards;
+          animation: growLeaves 0.5s linear 6s forwards;
+}
+.container .flowers .second-flower .bloom .two {
+  position: absolute;
+  top: -130px;
+  right: -30px;
+  transform: rotate(135deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 6.15s forwards;
+          animation: growLeaves 0.5s linear 6.15s forwards;
+}
+.container .flowers .second-flower .bloom .three {
+  position: absolute;
+  top: -110px;
+  right: -60px;
+  transform: rotate(15deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 6.3s forwards;
+          animation: growLeaves 0.5s linear 6.3s forwards;
+}
+.container .flowers .second-flower .bloom .four {
+  position: absolute;
+  top: -70px;
+  right: -60px;
+  transform: rotate(75deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 6.45s forwards;
+          animation: growLeaves 0.5s linear 6.45s forwards;
+}
+.container .flowers .second-flower .bloom .five {
+  position: absolute;
+  top: -50px;
+  right: -30px;
+  transform: rotate(135deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 7s forwards;
+          animation: growLeaves 0.5s linear 7s forwards;
+}
+.container .flowers .second-flower .bloom .six {
+  position: absolute;
+  top: -70px;
+  right: 5px;
+  transform: rotate(15deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 7.15s forwards;
+          animation: growLeaves 0.5s linear 7.15s forwards;
+}
+.container .flowers .second-flower .bloom .center {
+  position: absolute;
+  top: -80px;
+  right: -18px;
+  z-index: 99;
+  opacity: 0;
+  -webkit-animation: growCenter 2s linear 4s forwards;
+          animation: growCenter 2s linear 4s forwards;
+}
+.container .flowers .third-flower {
+  margin-right: 5rem;
+  position: relative;
+}
+.container .flowers .third-flower .stem {
+  transform: translateY(100%);
+  -webkit-animation: grow 2s linear 1.5s forwards;
+          animation: grow 2s linear 1.5s forwards;
+  height: 43rem;
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  z-index: 2;
+}
+.container .flowers .third-flower .green {
+  background: linear-gradient(#0f7249, #20ea20);
+  position: absolute;
+  bottom: 18rem;
+  right: -0.7rem;
+  transform: rotate(75deg);
+  z-index: 1;
+  opacity: 0;
+  -webkit-animation: fadeIn 2s linear 1.9s forwards;
+          animation: fadeIn 2s linear 1.9s forwards;
+}
+.container .flowers .third-flower .bloom {
+  position: absolute;
+  top: -43rem;
+  left: 5rem;
+  transform: rotate(-90deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  -webkit-animation: rotation3 4s ease-in 7s infinite;
+          animation: rotation3 4s ease-in 7s infinite;
+}
+.container .flowers .third-flower .bloom .top,
+.container .flowers .third-flower .bloom .bottom {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .flowers .third-flower .bloom .leaf {
+  background: radial-gradient(#ee82ee, #196eee);
+}
+.container .flowers .third-flower .bloom .one {
+  position: absolute;
+  top: -110px;
+  right: 8px;
+  transform: rotate(75deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 6.15s forwards;
+          animation: growLeaves 0.5s linear 6.15s forwards;
+}
+.container .flowers .third-flower .bloom .two {
+  position: absolute;
+  top: -130px;
+  right: -30px;
+  transform: rotate(135deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 6.5s forwards;
+          animation: growLeaves 0.5s linear 6.5s forwards;
+}
+.container .flowers .third-flower .bloom .three {
+  position: absolute;
+  top: -110px;
+  right: -65px;
+  transform: rotate(15deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 6.15s forwards;
+          animation: growLeaves 0.5s linear 6.15s forwards;
+}
+.container .flowers .third-flower .bloom .four {
+  position: absolute;
+  top: -70px;
+  right: -60px;
+  transform: rotate(75deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 6.5s forwards;
+          animation: growLeaves 0.5s linear 6.5s forwards;
+}
+.container .flowers .third-flower .bloom .five {
+  position: absolute;
+  top: -50px;
+  right: -30px;
+  transform: rotate(135deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 6.15s forwards;
+          animation: growLeaves 0.5s linear 6.15s forwards;
+}
+.container .flowers .third-flower .bloom .six {
+  position: absolute;
+  top: -70px;
+  right: 5px;
+  transform: rotate(15deg);
+  opacity: 0;
+  -webkit-animation: growLeaves 0.5s linear 6.5s forwards;
+          animation: growLeaves 0.5s linear 6.5s forwards;
+}
+.container .flowers .third-flower .bloom .center {
+  position: absolute;
+  top: -80px;
+  right: -18px;
+  z-index: 99;
+  opacity: 0;
+  -webkit-animation: growCenter 2s linear 4s forwards;
+          animation: growCenter 2s linear 4s forwards;
 }
 
 @-webkit-keyframes sun {
@@ -203,4 +560,158 @@ body {
 .text span:nth-child(9) {
   -webkit-animation-delay: 1.05s;
           animation-delay: 1.05s;
+}
+
+@-webkit-keyframes grow {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes growCenter {
+  0% {
+    opacity: 0;
+    height: 15px;
+    width: 10px;
+    top: -50px;
+    right: 0px;
+    background-color: #0f7249;
+  }
+  50% {
+    opacity: 0.5;
+    background-color: #0f7249;
+  }
+  75% {
+    background-color: #20ea20;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes growCenter {
+  0% {
+    opacity: 0;
+    height: 15px;
+    width: 10px;
+    top: -50px;
+    right: 0px;
+    background-color: #0f7249;
+  }
+  50% {
+    opacity: 0.5;
+    background-color: #0f7249;
+  }
+  75% {
+    background-color: #20ea20;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes growLeaves {
+  0% {
+    opacity: 0;
+    height: 10px;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes growLeaves {
+  0% {
+    opacity: 0;
+    height: 10px;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rotation1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotation1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes rotation2 {
+  0% {
+    transform: rotate(150deg);
+  }
+  50% {
+    left: -0.5rem;
+    top: -25rem;
+    transform: rotate(155deg);
+  }
+  100% {
+    transform: rotate(150deg);
+  }
+}
+@keyframes rotation2 {
+  0% {
+    transform: rotate(150deg);
+  }
+  50% {
+    left: -0.5rem;
+    top: -25rem;
+    transform: rotate(155deg);
+  }
+  100% {
+    transform: rotate(150deg);
+  }
+}
+@-webkit-keyframes rotation3 {
+  0% {
+    transform: rotate(-95deg);
+  }
+  50% {
+    top: -42.5rem;
+    transform: rotate(-85deg);
+  }
+  100% {
+    transform: rotate(-95deg);
+  }
+}
+@keyframes rotation3 {
+  0% {
+    transform: rotate(-95deg);
+  }
+  50% {
+    top: -42.5rem;
+    transform: rotate(-85deg);
+  }
+  100% {
+    transform: rotate(-95deg);
+  }
 }/*# sourceMappingURL=style.css.map */

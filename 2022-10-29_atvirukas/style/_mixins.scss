@@ -11,6 +11,11 @@
     justify-content: flex-end;
     align-items: center;
   }
+  @mixin flexRowAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
   @mixin perfectCenter {
     display: flex;
     justify-content: center;

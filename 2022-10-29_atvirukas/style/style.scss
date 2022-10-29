@@ -38,14 +38,326 @@ body {
     transform: translateX(-50%);
     @include perfectCenter;
     text-align: center;
-    // animation: fadeIn 5s ease 5s;
-    // animation-delay: 20s;
+    color: $colorWhite;
     span {
       opacity: 0;
       padding: $size1;
       font-family: "Shadows Into Light", cursive;
       font-size: $size4;
       animation: fadeIn 10s linear -15s forwards, flip 10s infinite 10s;
+    }
+  }
+  .flowers {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    @include flexRowAround;
+    .stem {
+      background: linear-gradient(90deg, $colorGreen, $colorLightGreen);
+      width: 10px;
+      border-radius: 30px 30px 0 0;
+    }
+    .leaf {
+      width: 60px;
+      height: 60px;
+      border-radius: 40px 0 40px 0;
+      background-color: $colorGreen;
+    }
+    .center {
+      width: 45px;
+      height: 45px;
+      background: radial-gradient($colorYellow, $colorOrange);
+      border-radius: $borderRadius;
+    }
+    .first-flower {
+    //   margin-right: 5rem;
+      position: relative;
+      .stem {
+        transform: translateY(100%);
+        animation: grow 3s linear 2.3s forwards;
+        height: 15rem;
+        position: absolute;
+        bottom: 0;
+        left: 1rem;
+        z-index: 2;
+      }
+      .green {
+        background: linear-gradient($colorLightGreen, $colorGreen);
+        position: absolute;
+        bottom: 7rem;
+        right: -5.5rem;
+        transform: rotate(15deg);
+        z-index: 1;
+        opacity: 0;
+        animation: fadeIn 2s linear 3s forwards;
+      }
+      .bloom {
+        position: absolute;
+        top: -12rem;
+        left: 1.4rem;
+        @include perfectColCenter;
+        z-index: 3;
+        animation: rotation1 4s ease-in 7s infinite;
+
+        .top,
+        .bottom {
+          position: relative;
+          @include perfectCenter;
+        }
+        .leaf {
+          background: linear-gradient($colorPurple, $colorWhite);
+        }
+        .one {
+          position: absolute;
+          top: -110px;
+          right: 5px;
+          transform: rotate(75deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 7.1s forwards;
+        }
+        .two {
+          position: absolute;
+          top: -130px;
+          right: -30px;
+          transform: rotate(135deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 7.1s forwards;
+        }
+        .three {
+          position: absolute;
+          top: -110px;
+          right: -60px;
+          transform: rotate(15deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 7.1s forwards;
+        }
+        .four {
+          position: absolute;
+          top: -70px;
+          right: -60px;
+          transform: rotate(75deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 7.1s forwards;
+        }
+        .five {
+          position: absolute;
+          top: -50px;
+          right: -30px;
+          transform: rotate(135deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 7.1s forwards;
+        }
+        .six {
+          position: absolute;
+          top: -70px;
+          right: 5px;
+          transform: rotate(15deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 7.1s forwards;
+        }
+        .center {
+          position: absolute;
+          top: -80px;
+          right: -18px;
+          z-index: 99;
+          opacity: 0;
+          animation: growCenter 2s linear 5s forwards;
+        }
+      }
+    }
+    .second-flower {
+      margin-right: 5rem;
+      position: relative;
+      .stem {
+        transform: translateY(100%);
+        animation: grow 4s linear 3s forwards;
+        height: 23rem;
+        position: absolute;
+        bottom: 0;
+        left: 1rem;
+        z-index: 2;
+      }
+      .green {
+        background: linear-gradient($colorLightGreen, $colorGreen);
+        position: absolute;
+        bottom: 10rem;
+        right: -0.7rem;
+        transform: rotate(75deg);
+        z-index: 1;
+        opacity: 0;
+        animation: fadeIn 2s linear 2s forwards;
+      }
+      .bloom {
+        position: absolute;
+        top: -25rem;
+        left: -0.8rem;
+        transform: rotate(150deg);
+        @include perfectColCenter;
+        z-index: 5;
+        animation: rotation2 4s ease-in 7s infinite;
+        .top,
+        .bottom {
+          position: relative;
+          @include perfectCenter;
+        }
+        .leaf {
+          background: linear-gradient($colorTomato, $colorPurple);
+        }
+        .one {
+          position: absolute;
+          top: -110px;
+          right: 5px;
+          transform: rotate(75deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 6s forwards;
+        }
+        .two {
+          position: absolute;
+          top: -130px;
+          right: -30px;
+          transform: rotate(135deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 6.15s forwards;
+        }
+        .three {
+          position: absolute;
+          top: -110px;
+          right: -60px;
+          transform: rotate(15deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 6.3s forwards;
+        }
+        .four {
+          position: absolute;
+          top: -70px;
+          right: -60px;
+          transform: rotate(75deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 6.45s forwards;
+        }
+        .five {
+          position: absolute;
+          top: -50px;
+          right: -30px;
+          transform: rotate(135deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 7s forwards;
+        }
+        .six {
+          position: absolute;
+          top: -70px;
+          right: 5px;
+          transform: rotate(15deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 7.15s forwards;
+        }
+        .center {
+          position: absolute;
+          top: -80px;
+          right: -18px;
+          z-index: 99;
+          opacity: 0;
+          animation: growCenter 2s linear 4s forwards;
+        }
+      }
+    }
+    .third-flower {
+      margin-right: 5rem;
+      position: relative;
+      .stem {
+        transform: translateY(100%);
+        animation: grow 2s linear 1.5s forwards;
+        height: 43rem;
+        position: absolute;
+        bottom: 0;
+        left: 1rem;
+        z-index: 2;
+        // animation: stem-move 7s linear 7s infinite;
+      }
+      .green {
+        background: linear-gradient($colorGreen, $colorLightGreen);
+        // background: linear-gradient($colorLightGreen, $colorGreen);
+        position: absolute;
+        bottom: 18rem;
+        right: -0.7rem;
+        transform: rotate(75deg);
+        z-index: 1;
+        opacity: 0;
+        animation: fadeIn 2s linear 1.9s forwards;
+      }
+      .bloom {
+        position: absolute;
+        top: -43rem;
+        left: 5rem;
+        transform: rotate(-90deg);
+        @include perfectColCenter;
+        z-index: 5;
+        animation: rotation3 4s ease-in 7s infinite;
+        .top,
+        .bottom {
+          position: relative;
+          @include perfectCenter;
+        }
+        .leaf {
+          background: radial-gradient($colorPink, $colorBlue);
+        }
+        .one {
+          position: absolute;
+          top: -110px;
+          right: 8px;
+          transform: rotate(75deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 6.15s forwards;
+        }
+        .two {
+          position: absolute;
+          top: -130px;
+          right: -30px;
+          transform: rotate(135deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 6.5s forwards;
+        }
+        .three {
+          position: absolute;
+          top: -110px;
+          right: -65px;
+          transform: rotate(15deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 6.15s forwards;
+        }
+        .four {
+          position: absolute;
+          top: -70px;
+          right: -60px;
+          transform: rotate(75deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 6.5s forwards;
+        }
+        .five {
+          position: absolute;
+          top: -50px;
+          right: -30px;
+          transform: rotate(135deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 6.15s forwards;
+        }
+        .six {
+          position: absolute;
+          top: -70px;
+          right: 5px;
+          transform: rotate(15deg);
+          opacity: 0;
+          animation: growLeaves 0.5s linear 6.5s forwards;
+        }
+        .center {
+          position: absolute;
+          top: -80px;
+          right: -18px;
+          z-index: 99;
+          opacity: 0;
+          animation: growCenter 2s linear 4s forwards;
+        }
+      }
     }
   }
 }
@@ -55,10 +367,6 @@ body {
     left: -10rem;
     top: 25rem;
   }
-  // 50%{
-  //     left: 0rem;
-  //     top: 10rem;
-  // }
   100% {
     left: 5rem;
     top: 4rem;
@@ -112,3 +420,87 @@ body {
     animation-delay: ($i * 0.1s) + 0.15s;
   }
 }
+@keyframes grow {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes growCenter {
+  0% {
+    opacity: 0;
+    height: 15px;
+    width: 10px;
+    top: -50px;
+    right: 0px;
+    background-color: $colorGreen;
+  }
+  50% {
+    //   transform: translateY(15%);
+    opacity: 0.5;
+    background-color: $colorGreen;
+  }
+  75% {
+    background-color: $colorLightGreen;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes growLeaves {
+  0% {
+    opacity: 0;
+    height: 10px;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotation1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    // left: 0.25rem;
+    // top: -12rem;
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotation2 {
+  0% {
+    transform: rotate(150deg);
+  }
+  50% {
+    // top: -25rem;
+    // left: -0.8rem;
+    left: -0.5rem;
+    // left: 0.25rem;
+    top: -25rem;
+    transform: rotate(155deg);
+  }
+  100% {
+    transform: rotate(150deg);
+  }
+}
+@keyframes rotation3 {
+  0% {
+    transform: rotate(-95deg);
+  }
+  50% {
+    top: -42.5rem;
+    transform: rotate(-85deg);
+  }
+  100% {
+    transform: rotate(-95deg);
+  }
+}
+
