@@ -18,6 +18,7 @@ body {
   width: 50%;
   padding: $size2;
   overflow: hidden;
+  animation: brighten 2s linear forwards;
   .sun {
     position: absolute;
     top: 4rem;
@@ -70,7 +71,6 @@ body {
       border-radius: $borderRadius;
     }
     .first-flower {
-    //   margin-right: 5rem;
       position: relative;
       .stem {
         transform: translateY(100%);
@@ -97,7 +97,7 @@ body {
         left: 1.4rem;
         @include perfectColCenter;
         z-index: 3;
-        animation: rotation1 4s ease-in 7s infinite;
+        animation: rotation1 6s ease-in 7s infinite;
 
         .top,
         .bottom {
@@ -113,7 +113,7 @@ body {
           right: 5px;
           transform: rotate(75deg);
           opacity: 0;
-          animation: growLeaves 0.5s linear 7.1s forwards;
+          animation: growLeaves 1s linear 7.1s forwards;
         }
         .two {
           position: absolute;
@@ -121,7 +121,7 @@ body {
           right: -30px;
           transform: rotate(135deg);
           opacity: 0;
-          animation: growLeaves 0.5s linear 7.1s forwards;
+          animation: growLeaves 1s linear 7.1s forwards;
         }
         .three {
           position: absolute;
@@ -129,7 +129,7 @@ body {
           right: -60px;
           transform: rotate(15deg);
           opacity: 0;
-          animation: growLeaves 0.5s linear 7.1s forwards;
+          animation: growLeaves 1s linear 7.1s forwards;
         }
         .four {
           position: absolute;
@@ -137,7 +137,7 @@ body {
           right: -60px;
           transform: rotate(75deg);
           opacity: 0;
-          animation: growLeaves 0.5s linear 7.1s forwards;
+          animation: growLeaves 1s linear 7.1s forwards;
         }
         .five {
           position: absolute;
@@ -145,7 +145,7 @@ body {
           right: -30px;
           transform: rotate(135deg);
           opacity: 0;
-          animation: growLeaves 0.5s linear 7.1s forwards;
+          animation: growLeaves 1s linear 7.1s forwards;
         }
         .six {
           position: absolute;
@@ -153,7 +153,7 @@ body {
           right: 5px;
           transform: rotate(15deg);
           opacity: 0;
-          animation: growLeaves 0.5s linear 7.1s forwards;
+          animation: growLeaves 1s linear 7.1s forwards;
         }
         .center {
           position: absolute;
@@ -185,7 +185,7 @@ body {
         transform: rotate(75deg);
         z-index: 1;
         opacity: 0;
-        animation: fadeIn 2s linear 2s forwards;
+        animation: fadeIn 2s linear 4s forwards;
       }
       .bloom {
         position: absolute;
@@ -194,7 +194,7 @@ body {
         transform: rotate(150deg);
         @include perfectColCenter;
         z-index: 5;
-        animation: rotation2 4s ease-in 7s infinite;
+        animation: rotation2 5s ease-in 8s infinite;
         .top,
         .bottom {
           position: relative;
@@ -209,7 +209,7 @@ body {
           right: 5px;
           transform: rotate(75deg);
           opacity: 0;
-          animation: growLeaves 0.5s linear 6s forwards;
+          animation: growLeaves 0.5s linear 8s forwards;
         }
         .two {
           position: absolute;
@@ -217,7 +217,7 @@ body {
           right: -30px;
           transform: rotate(135deg);
           opacity: 0;
-          animation: growLeaves 0.5s linear 6.15s forwards;
+          animation: growLeaves 0.5s linear 8.15s forwards;
         }
         .three {
           position: absolute;
@@ -225,7 +225,7 @@ body {
           right: -60px;
           transform: rotate(15deg);
           opacity: 0;
-          animation: growLeaves 0.5s linear 6.3s forwards;
+          animation: growLeaves 0.5s linear 8.3s forwards;
         }
         .four {
           position: absolute;
@@ -233,7 +233,7 @@ body {
           right: -60px;
           transform: rotate(75deg);
           opacity: 0;
-          animation: growLeaves 0.5s linear 6.45s forwards;
+          animation: growLeaves 0.5s linear 8.45s forwards;
         }
         .five {
           position: absolute;
@@ -241,7 +241,7 @@ body {
           right: -30px;
           transform: rotate(135deg);
           opacity: 0;
-          animation: growLeaves 0.5s linear 7s forwards;
+          animation: growLeaves 0.5s linear 8s forwards;
         }
         .six {
           position: absolute;
@@ -249,7 +249,7 @@ body {
           right: 5px;
           transform: rotate(15deg);
           opacity: 0;
-          animation: growLeaves 0.5s linear 7.15s forwards;
+          animation: growLeaves 0.5s linear 8.15s forwards;
         }
         .center {
           position: absolute;
@@ -257,26 +257,24 @@ body {
           right: -18px;
           z-index: 99;
           opacity: 0;
-          animation: growCenter 2s linear 4s forwards;
+          animation: growCenter 2s linear 6.7s forwards;
         }
       }
     }
     .third-flower {
-      margin-right: 5rem;
+      margin-right: 3rem;
       position: relative;
       .stem {
         transform: translateY(100%);
-        animation: grow 2s linear 1.5s forwards;
+        animation: grow 2.5s linear 1.5s forwards;
         height: 43rem;
         position: absolute;
         bottom: 0;
         left: 1rem;
         z-index: 2;
-        // animation: stem-move 7s linear 7s infinite;
       }
       .green {
         background: linear-gradient($colorGreen, $colorLightGreen);
-        // background: linear-gradient($colorLightGreen, $colorGreen);
         position: absolute;
         bottom: 18rem;
         right: -0.7rem;
@@ -355,7 +353,7 @@ body {
           right: -18px;
           z-index: 99;
           opacity: 0;
-          animation: growCenter 2s linear 4s forwards;
+          animation: growCenter 2s linear 3.8s forwards;
         }
       }
     }
@@ -503,4 +501,15 @@ body {
     transform: rotate(-95deg);
   }
 }
-
+@keyframes brighten {
+    0%{
+        background-color: rgb(39, 40, 40);
+    }
+    60%{
+        background-color: rgba(110, 112, 112, 0.7);
+        
+    }
+    100%{
+        background-color: cyan;
+    }
+}
