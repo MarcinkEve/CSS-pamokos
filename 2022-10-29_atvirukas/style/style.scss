@@ -12,7 +12,7 @@ body {
 }
 .container {
   position: relative;
-  background-color: cyan;
+  background-color: $colorCyanOpac;
   border: 20px solid $colorWhite;
   height: 100%;
   width: 50%;
@@ -26,7 +26,7 @@ body {
     width: 100px;
     height: 100px;
     filter: blur(0.2rem);
-    border: $colorTransparent;
+    border-color: $colorTransparent;
     border-radius: $borderRadius;
     box-shadow: rgba(95, 16, 3, 0.56) 0px 5px 15px;
     background-color: $colorYellow;
@@ -57,306 +57,247 @@ body {
       background: linear-gradient(90deg, $colorGreen, $colorLightGreen);
       width: 10px;
       border-radius: 30px 30px 0 0;
+      transform: translateY(100%);
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+      left: 1rem;
     }
     .leaf {
       width: 60px;
       height: 60px;
       border-radius: 40px 0 40px 0;
-      background-color: $colorGreen;
+      opacity: 0;
+      position: absolute;
+    }
+    .green {
+      z-index: 1;
+      background: linear-gradient($colorLightGreen, $colorGreen);
+    }
+    .bloom {
+      position: absolute;
+      @include perfectColCenter;
+      z-index: 3;
+      .top,
+      .bottom {
+        position: relative;
+        @include perfectCenter;
+      }
     }
     .center {
       width: 45px;
       height: 45px;
       background: radial-gradient($colorYellow, $colorOrange);
       border-radius: $borderRadius;
+      opacity: 0;
+      z-index: 99;
+      position: absolute;
     }
     .first-flower {
       position: relative;
       .stem {
-        transform: translateY(100%);
         animation: grow 3s linear 2.3s forwards;
         height: 15rem;
-        position: absolute;
-        bottom: 0;
         left: 1rem;
-        z-index: 2;
       }
       .green {
-        background: linear-gradient($colorLightGreen, $colorGreen);
-        position: absolute;
         bottom: 7rem;
         right: -5.5rem;
         transform: rotate(15deg);
-        z-index: 1;
-        opacity: 0;
         animation: fadeIn 2s linear 3s forwards;
       }
       .bloom {
-        position: absolute;
         top: -12rem;
         left: 1.4rem;
-        @include perfectColCenter;
-        z-index: 3;
         animation: rotation1 6s ease-in 7s infinite;
-
-        .top,
-        .bottom {
-          position: relative;
-          @include perfectCenter;
-        }
         .leaf {
           background: linear-gradient($colorPurple, $colorWhite);
+          animation: growLeaves 1s linear 7.1s forwards;
         }
         .one {
-          position: absolute;
           top: -110px;
           right: 5px;
           transform: rotate(75deg);
-          opacity: 0;
-          animation: growLeaves 1s linear 7.1s forwards;
         }
         .two {
-          position: absolute;
           top: -130px;
           right: -30px;
           transform: rotate(135deg);
-          opacity: 0;
-          animation: growLeaves 1s linear 7.1s forwards;
         }
         .three {
-          position: absolute;
           top: -110px;
           right: -60px;
           transform: rotate(15deg);
-          opacity: 0;
-          animation: growLeaves 1s linear 7.1s forwards;
         }
         .four {
-          position: absolute;
           top: -70px;
           right: -60px;
           transform: rotate(75deg);
-          opacity: 0;
-          animation: growLeaves 1s linear 7.1s forwards;
         }
         .five {
-          position: absolute;
           top: -50px;
           right: -30px;
           transform: rotate(135deg);
-          opacity: 0;
-          animation: growLeaves 1s linear 7.1s forwards;
         }
         .six {
-          position: absolute;
           top: -70px;
           right: 5px;
           transform: rotate(15deg);
-          opacity: 0;
-          animation: growLeaves 1s linear 7.1s forwards;
         }
         .center {
-          position: absolute;
           top: -80px;
           right: -18px;
-          z-index: 99;
-          opacity: 0;
           animation: growCenter 2s linear 5s forwards;
         }
       }
     }
     .second-flower {
-      margin-right: 5rem;
+      margin-right: $size5;
       position: relative;
       .stem {
-        transform: translateY(100%);
         animation: grow 4s linear 3s forwards;
         height: 23rem;
-        position: absolute;
-        bottom: 0;
-        left: 1rem;
-        z-index: 2;
       }
       .green {
-        background: linear-gradient($colorLightGreen, $colorGreen);
-        position: absolute;
         bottom: 10rem;
         right: -0.7rem;
         transform: rotate(75deg);
-        z-index: 1;
-        opacity: 0;
         animation: fadeIn 2s linear 4s forwards;
       }
       .bloom {
-        position: absolute;
         top: -25rem;
         left: -0.8rem;
         transform: rotate(150deg);
-        @include perfectColCenter;
-        z-index: 5;
         animation: rotation2 5s ease-in 8s infinite;
-        .top,
-        .bottom {
-          position: relative;
-          @include perfectCenter;
-        }
         .leaf {
           background: linear-gradient($colorTomato, $colorPurple);
         }
         .one {
-          position: absolute;
           top: -110px;
           right: 5px;
           transform: rotate(75deg);
-          opacity: 0;
           animation: growLeaves 0.5s linear 8s forwards;
         }
         .two {
-          position: absolute;
           top: -130px;
           right: -30px;
           transform: rotate(135deg);
-          opacity: 0;
           animation: growLeaves 0.5s linear 8.15s forwards;
         }
         .three {
-          position: absolute;
           top: -110px;
           right: -60px;
           transform: rotate(15deg);
-          opacity: 0;
           animation: growLeaves 0.5s linear 8.3s forwards;
         }
         .four {
-          position: absolute;
           top: -70px;
           right: -60px;
           transform: rotate(75deg);
-          opacity: 0;
           animation: growLeaves 0.5s linear 8.45s forwards;
         }
         .five {
-          position: absolute;
           top: -50px;
           right: -30px;
           transform: rotate(135deg);
-          opacity: 0;
           animation: growLeaves 0.5s linear 8s forwards;
         }
         .six {
-          position: absolute;
           top: -70px;
           right: 5px;
           transform: rotate(15deg);
-          opacity: 0;
           animation: growLeaves 0.5s linear 8.15s forwards;
         }
         .center {
-          position: absolute;
           top: -80px;
           right: -18px;
-          z-index: 99;
-          opacity: 0;
           animation: growCenter 2s linear 6.7s forwards;
         }
       }
     }
     .third-flower {
-      margin-right: 3rem;
+      margin-right: $size3;
       position: relative;
       .stem {
-        transform: translateY(100%);
         animation: grow 2.5s linear 1.5s forwards;
         height: 43rem;
-        position: absolute;
-        bottom: 0;
-        left: 1rem;
-        z-index: 2;
       }
       .green {
         background: linear-gradient($colorGreen, $colorLightGreen);
-        position: absolute;
         bottom: 18rem;
         right: -0.7rem;
         transform: rotate(75deg);
-        z-index: 1;
-        opacity: 0;
         animation: fadeIn 2s linear 1.9s forwards;
       }
       .bloom {
-        position: absolute;
         top: -43rem;
         left: 5rem;
         transform: rotate(-90deg);
-        @include perfectColCenter;
-        z-index: 5;
         animation: rotation3 4s ease-in 7s infinite;
-        .top,
-        .bottom {
-          position: relative;
-          @include perfectCenter;
-        }
         .leaf {
           background: radial-gradient($colorPink, $colorBlue);
         }
         .one {
-          position: absolute;
           top: -110px;
           right: 8px;
           transform: rotate(75deg);
-          opacity: 0;
           animation: growLeaves 0.5s linear 6.15s forwards;
         }
         .two {
-          position: absolute;
           top: -130px;
           right: -30px;
           transform: rotate(135deg);
-          opacity: 0;
           animation: growLeaves 0.5s linear 6.5s forwards;
         }
         .three {
-          position: absolute;
           top: -110px;
           right: -65px;
           transform: rotate(15deg);
-          opacity: 0;
           animation: growLeaves 0.5s linear 6.15s forwards;
         }
         .four {
-          position: absolute;
           top: -70px;
           right: -60px;
           transform: rotate(75deg);
-          opacity: 0;
           animation: growLeaves 0.5s linear 6.5s forwards;
         }
         .five {
-          position: absolute;
           top: -50px;
           right: -30px;
           transform: rotate(135deg);
-          opacity: 0;
           animation: growLeaves 0.5s linear 6.15s forwards;
         }
         .six {
-          position: absolute;
           top: -70px;
           right: 5px;
           transform: rotate(15deg);
-          opacity: 0;
           animation: growLeaves 0.5s linear 6.5s forwards;
         }
         .center {
-          position: absolute;
           top: -80px;
           right: -18px;
-          z-index: 99;
-          opacity: 0;
           animation: growCenter 2s linear 3.8s forwards;
         }
       }
     }
+  }
+}
+
+@for $i from 1 through 9 {
+  .text span:nth-child(#{$i}) {
+    animation-delay: ($i * 0.1s) + 0.15s;
+  }
+}
+
+@keyframes brighten {
+  0% {
+    background-color: rgb(39, 40, 40);
+  }
+  60% {
+    background-color: rgba(110, 112, 112, 0.7);
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0.5);
   }
 }
 
@@ -370,6 +311,7 @@ body {
     top: 4rem;
   }
 }
+
 @keyframes pulsate {
   0% {
     box-shadow: inset 0 0 5px $colorYellow, rgba(255, 165, 0, 1) 0px 5px 40px;
@@ -384,6 +326,7 @@ body {
     box-shadow: inset 0 0 5px $colorYellow, rgba(255, 165, 0, 1) 0px 5px 40px;
   }
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -395,6 +338,7 @@ body {
     opacity: 1;
   }
 }
+
 @keyframes flip {
   5% {
     transform: rotateX(1turn);
@@ -413,11 +357,7 @@ body {
     transform: rotateX(5turn);
   }
 }
-@for $i from 1 through 9 {
-  .text span:nth-child(#{$i}) {
-    animation-delay: ($i * 0.1s) + 0.15s;
-  }
-}
+
 @keyframes grow {
   from {
     transform: translateY(100%);
@@ -426,6 +366,7 @@ body {
     transform: translateY(0%);
   }
 }
+
 @keyframes growCenter {
   0% {
     opacity: 0;
@@ -436,7 +377,6 @@ body {
     background-color: $colorGreen;
   }
   50% {
-    //   transform: translateY(15%);
     opacity: 0.5;
     background-color: $colorGreen;
   }
@@ -447,6 +387,7 @@ body {
     opacity: 1;
   }
 }
+
 @keyframes growLeaves {
   0% {
     opacity: 0;
@@ -465,23 +406,19 @@ body {
     transform: rotate(0deg);
   }
   50% {
-    // left: 0.25rem;
-    // top: -12rem;
     transform: rotate(-10deg);
   }
   100% {
     transform: rotate(0deg);
   }
 }
+
 @keyframes rotation2 {
   0% {
     transform: rotate(150deg);
   }
   50% {
-    // top: -25rem;
-    // left: -0.8rem;
     left: -0.5rem;
-    // left: 0.25rem;
     top: -25rem;
     transform: rotate(155deg);
   }
@@ -489,6 +426,7 @@ body {
     transform: rotate(150deg);
   }
 }
+
 @keyframes rotation3 {
   0% {
     transform: rotate(-95deg);
@@ -500,16 +438,4 @@ body {
   100% {
     transform: rotate(-95deg);
   }
-}
-@keyframes brighten {
-    0%{
-        background-color: rgb(39, 40, 40);
-    }
-    60%{
-        background-color: rgba(110, 112, 112, 0.7);
-        
-    }
-    100%{
-        background-color: cyan;
-    }
 }
