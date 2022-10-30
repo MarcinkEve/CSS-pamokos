@@ -9,6 +9,7 @@ body {
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -44,6 +45,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -98,6 +100,7 @@ body {
 .container .flowers .bloom .bottom {
   position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
