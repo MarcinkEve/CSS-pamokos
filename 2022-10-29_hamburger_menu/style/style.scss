@@ -17,79 +17,6 @@ header {
   background-color: $colorCrimson;
 }
 
-// .menu-btn {
-//   //   background-color: $colorLight;
-//   position: absolute;
-//   height: 30px;
-//   width: 30px;
-//   top: 1rem;
-//   right: 1rem;
-//   z-index: 1;
-//   cursor: pointer;
-//   @include transition;
-//   &__burger {
-//     position: absolute;
-//     background-color: $colorLight;
-//     top: 0.5rem;
-//     right: 0;
-//     width: 30px;
-//     height: 3px;
-//     @include transition;
-
-//     &::before {
-//       background-color: $colorLight;
-//       content: " ";
-//       position: absolute;
-//       width: 30px;
-//       height: 3px;
-//       top: -8px;
-//       @include transition;
-//     }
-//     &::after {
-//       background-color: $colorLight;
-//       content: " ";
-//       position: absolute;
-//       width: 20px;
-//       height: 3px;
-//       top: 8px;
-//       @include transition;
-//     }
-//     &.open {
-//       transform: rotate(720deg);
-//       background-color: $colorLight; ////////////////////
-//       &::before {
-//         transform: rotate(45deg) translate(5px, 8px);
-//       }
-//       &::after {
-//         width: 30px;
-//         transform: rotate(-45deg) translate(3px, -7px);
-//       }
-//     }
-//   }
-// }
-// .nav {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100vw;
-//   opacity: 0.8;
-//   visibility: hidden;
-//   &.open {
-//     visibility: visible;
-//   }
-//   .menu-nav {
-//     display: flex;
-//     flex-flow: column wrap;
-//     justify-content: center;
-//     align-items: center;
-//     height: 100vh;
-//     overflow: hidden;
-//     list-style-type: none;
-//     transform: translateY(-100%);
-//     @include transition;
-//   }
-// }
-
 .menu-wrap {
   position: fixed;
   top: 0;
@@ -161,54 +88,46 @@ header {
     }
 
     &:checked ~ .nav {
+      @include transition;
+
       visibility: visible;
       background-color: $colorDark;
-      //   animation: text-slide-left 2s;
-      transform: translate(0%, 0%); ///// ++++
-      @include transition;
+      transform: translate(0%, 0%);
     }
     &:checked ~ .menu-nav {
-      //   transform: translate(0%, 0%);
-      //   @include transition;
       @include perfectCenter;
-      //   animation: text-slide-items 2s;
-      //   @include transition;
     }
     &:checked ~ .menu-nav__item {
-      transform: translateX(0vw);
       @include transition;
-      //   animation: text-slide-items 2s;
+
+      transform: translateX(0vw);
     }
   }
 }
 .nav {
+  @include transition;
+
   visibility: hidden;
   position: fixed;
   top: 0;
   right: 0;
   width: 100vw;
   opacity: 0.8;
-  transform: translate(0%, -100%); ///// ++++
-  @include transition;
-  //   animation: text-slide-up 2s;   ///// ++++
+  transform: translate(0%, -100%);
+
   .menu-nav {
-    // transform: translate(0%, 0%); ///// ++++
-    // @include transition;
-    background-color: chocolate;
     @include perfectColCenter;
+
+    background-color: $colorDark;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
     list-style-type: none;
-    // transform: translate(0%, 10%); //ul padetis ekrane, Y asis
-    // @include transition; // nereikia, nes atsiranda linkai po slide up
+
     &__item {
-      // @include perfectCenter;
-      //   transform: translateX(50vw);
       @include transition;
-      // animation: text-slide-items 2s;
     }
-    //****************************************************
+
     &__link {
       display: inline-block;
       font-size: 2rem;
@@ -217,6 +136,7 @@ header {
       font-weight: 300;
       color: $colorLight;
       text-decoration: none;
+
       &:hover {
         color: $colorCrimson;
       }
@@ -224,38 +144,21 @@ header {
   }
 }
 
-@keyframes text-slide-left {
-  from {
-    transform: translate(100%, 0);
-  }
-  to {
-    transform: translate(0, 0);
-  }
-}
-// @keyframes text-slide-items {
+// @keyframes text-slide-left {
 //   from {
-//     transform: translate(10%, 10%);
-//     // background-color: red;
+//     transform: translate(100%, 0);
 //   }
 //   to {
-//     transform: translateX(0, 0);
-//     background-color: green;
+//     transform: translate(0, 0);
 //   }
 // }
-@keyframes text-slide-up {
-  from {
-    transform: translate(0%, 0%); ///// ++++
-  }
-  to {
-    transform: translate(0%, -100%); ///// ++++
-  }
-}
-// @keyframes text-slide-down {
+
+// @keyframes text-slide-up {
 //   from {
-//     transform: translate(0%, -100%); ///// ++++
+//     transform: translate(0%, 0%);
 //   }
 //   to {
-//     transform: translate(0%, 0%); ///// ++++
+//     transform: translate(0%, -100%);
 //   }
 // }
 

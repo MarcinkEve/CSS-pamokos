@@ -93,10 +93,10 @@ header {
   width: 100%;
 }
 .menu-wrap .toggler:checked ~ .nav {
+  transition: all 1s;
   visibility: visible;
   background-color: #272727;
   transform: translate(0%, 0%);
-  transition: all 1s;
 }
 .menu-wrap .toggler:checked ~ .menu-nav {
   display: flex;
@@ -104,11 +104,12 @@ header {
   align-items: center;
 }
 .menu-wrap .toggler:checked ~ .menu-nav__item {
-  transform: translateX(0vw);
   transition: all 1s;
+  transform: translateX(0vw);
 }
 
 .nav {
+  transition: all 1s;
   visibility: hidden;
   position: fixed;
   top: 0;
@@ -116,14 +117,13 @@ header {
   width: 100vw;
   opacity: 0.8;
   transform: translate(0%, -100%);
-  transition: all 1s;
 }
 .nav .menu-nav {
-  background-color: chocolate;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #272727;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -145,39 +145,6 @@ header {
   color: #ff652f;
 }
 
-@-webkit-keyframes text-slide-left {
-  from {
-    transform: translate(100%, 0);
-  }
-  to {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes text-slide-left {
-  from {
-    transform: translate(100%, 0);
-  }
-  to {
-    transform: translate(0, 0);
-  }
-}
-@-webkit-keyframes text-slide-up {
-  from {
-    transform: translate(0%, 0%);
-  }
-  to {
-    transform: translate(0%, -100%);
-  }
-}
-@keyframes text-slide-up {
-  from {
-    transform: translate(0%, 0%);
-  }
-  to {
-    transform: translate(0%, -100%);
-  }
-}
 .toggler:checked ~ .menu-nav__item:nth-child(1) {
   transition-delay: 0.25s;
 }

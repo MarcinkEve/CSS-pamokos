@@ -1,0 +1,31 @@
+@mixin transition {
+  transition: all 1s;
+}
+// @mixin flexRowStart {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+// }
+// @mixin flexRowEnd {
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: center;
+// }
+// @mixin perfectCenter {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+// @mixin perfectColCenter {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+@mixin flex-box($direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
